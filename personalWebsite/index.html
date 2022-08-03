@@ -1,0 +1,164 @@
+<html>
+   <head lang="en"> 
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <meta name="author" content="John I Fox">
+      <link rel="stylesheet" href="main.css">
+      <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+      <style>
+         body {
+            display: flex;
+            flex-wrap: wrap;     
+         }
+         .header {
+            font-size: xx-large;
+            color: #EFEFEF;
+            font-size: 45pt;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: center;
+            height: 250px;
+         }
+         .header, .footer {
+            flex: 1 100%;
+         }
+         .footer {
+            height: 15em;
+         }
+         .sidebar, .navigation {
+            background:#112B3C;
+            flex: 1;
+            height: 60%;
+         }
+         .main {
+            background-color: #F66B0E;
+            flex: 3;
+            height: 60%;
+            color: #112B3C;
+            font-size: large;
+            background-color: #F66B0E;
+            border: 30px solid #205375;
+            border-radius: 20px;
+            margin-bottom: 100px;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="navHeader">
+         <div class="container">
+            <img class="logo" src="images/logos/mehoyminoylogo.png" alt="DoodleBob">
+            <nav>
+               <ul>
+                  <li><a href="index.html">
+                     <img src="images/logos/homelogo.png" alt="home logo">
+                     Home
+                  </a></li>
+                  <li><a href="2gaming.html">
+                     <img src="images/logos/controllerlogo.png" alt="controller logo">
+                     Gaming
+                  </a></li>
+                  <li><a href="3academic.html">
+                     <img src="images/logos/gradcap.png" alt="graduation cap logo">
+                     Academic
+                  </a></li>
+                  <li><a href="4professional.html">
+                     <img src="images/logos/joblogo.png" alt="stick man carrying briefcase">
+                     Professional
+                  </a></li>
+                  <li><a href="5flextravel.html">
+                     <img src="images/logos/carlogo.png" alt="car logo">
+                     Travel
+                  </a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <header class="header">
+         <img class="headerLogo" src="images/logos/homelogo.png" alt="controller logo simple"> 
+         Home
+      </header>
+      <navigation class="navigation">
+         <ul class="quickLinks">
+            <li><a class="outsideLinks" href="https://www.uwlax.edu/" target="_blank">UWL Homepage</a></li>
+            <li><a class="outsideLinks" href="https://www.minecraft.net/en-us" target="_blank">Greatest Game of All time</a></li>
+            <li><a class="outsideLinks" href="https://www.google.com/" target="_blank">
+               The answer to the ultimate question of life, the universe and everything
+            </a></li>
+            <li><a class="outsideLinks" href="http://www.staggeringbeauty.com/" target="_blank">Fun website <b>(Flashing Light Warning)</b></a></li>
+            <li><a class="outsideLinks" href="https://theuselessweb.com/" target="_blank">The Useless Web</a></li>
+            <li><a class="outsideLinks" href="https://www.koalastothemax.com/" target="_blank">Koalas to the Max</a></li>
+         </ul>
+      </navigation>
+      <main class="main">
+         As the navbar suggests there are 4 sections to my personal website currently <br>
+         Gaming: This covers my hobby of videogames and has everything from top moments to game reviews <br>
+         Academic: This covers my academic progress and noteworthy achievements and projects <br>
+         Professional: This section is where to go if you were refrred to this website as a resume <br>
+         Travel: This section gives a glimpse of where my girlfriend and I travel to during the summer.
+      </main>
+      <aside class="sidebar">
+         <div class="until" id="gradCountdown">
+            <div class="until__component" style="background-color: transparent;"></div>
+            <div class="until__component" style="background-color: transparent;">
+               <img id="gradCountImg" src="images/logos/gradcap.png" alt="grad cap logo">
+            </div>
+            <div class="until__component" style="background-color: transparent;"></div>
+            <div class="until__component">
+               <div class="until__numeric until__numeric--years">00</div>
+               <div class="until__unit">yrs</div>
+            </div>
+            <div class="until__component">
+               <div class="until__numeric until__numeric--months">00</div>
+               <div class="until__unit">mos</div>
+            </div>
+            <div class="until__component">
+               <div class="until__numeric until__numeric--days">00</div>
+               <div class="until__unit">days</div>
+            </div>
+            <div class="until__component">
+               <div class="until__numeric until__numeric--hours">00</div>
+               <div class="until__unit">hrs</div>
+            </div>
+            <div class="until__component">
+               <div class="until__numeric until__numeric--minutes">00</div>
+               <div class="until__unit">mins</div>
+            </div>
+            <div class="until__component">
+               <div class="until__numeric until__numeric--seconds">00</div>
+               <div class="until__unit">sec</div>
+            </div>
+            <div class="until__event">
+               <br>
+            </div> 
+            <div id="gradDescription">
+               Which is when I graduate with a Major in Computer Science
+            </div>
+         </div>
+      </aside>
+      <div class="footer">
+         Hello thanks for all the way to my footer <br>
+         Intelectual Property of John Isaac Fox do not replicate without permission <br>
+         <br>
+         <b>Contact Info</b>
+         <ul>
+            <li>
+               <img src="images/logos/emaillogo.png" alt="email logo">
+               *******@gmail.com
+            </li>
+            <li>
+               <img src="images/logos/phonelogo.png" alt="phone logo">
+               (715)-123-1234
+            </li>
+            <li>
+               <img src="images/logos/locationlogo.png" alt="gps location logo">
+               1234 NunYa Blvd La Crosse WI 54601
+            </li>
+         </ul>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.3/dayjs.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.3/plugin/duration.min.js" integrity="sha512-QxVJ3lAILV0RSq3wPNV5CFNyyywxd5QfA9jfGfzVViwpL/eWSi5dR1nZMc02c+QE4xz2L1eQvx/fn18RrUq9lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="javascript/gradcounter.js"></script>
+   </body>
+   </html>
