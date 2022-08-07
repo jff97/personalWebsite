@@ -1,0 +1,171 @@
+#tictactoeCenterColumn {
+   background-color: #205375;
+}
+#gameContainer {
+   position: relative;
+   display: block;
+   background-color: #205375;
+   width: 60%;
+   margin-left: 20%;
+   height: 0;
+   padding-bottom: 71.025%;
+}
+
+
+#gameBoard {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   background-color: #EFEFEF;
+   width: 80%;
+   height: 0;
+   padding-bottom: 80%;
+   margin-right: 10%;
+   margin-left: 10%;
+}
+#infoBox {
+   box-sizing: border-box;
+   width: 100%;
+   height: 0px;
+   padding-bottom: 36%;
+   color: #EFEFEF;
+}
+.space {
+   position: relative;
+   display: none;
+   width: 31%;
+   height: 0;
+   padding-bottom: 31%;
+   background-color: #205375;
+   margin: 1.16666667%;
+   pointer-events: none;
+}
+
+.shake {
+   animation: shake .130s;
+   animation-iteration-count: 2;
+}
+@keyframes shake {
+   0% { transform: translate(.5px, .5px) rotate(0deg); }
+  10% { transform: translate(-.5px, -1px) rotate(-.5deg); }
+  20% { transform: translate(-1.5px, 0px) rotate(.5deg); }
+  30% { transform: translate(1.5px, 1px) rotate(0deg); }
+  40% { transform: translate(.5px, -.5px) rotate(.5deg); }
+  50% { transform: translate(-.5px, 1px) rotate(-.5deg); }
+  60% { transform: translate(-1.5px, .5px) rotate(0deg); }
+  70% { transform: translate(1.5px, .5px) rotate(-.5deg); }
+  80% { transform: translate(-.5px, -.5px) rotate(.5deg); }
+  90% { transform: translate(.5px, 1px) rotate(0deg); }
+  100% { transform: translate(.5px, -1px) rotate(-.5deg); }
+}
+
+.playerMark {
+   width: 90%;
+   margin: 5%;
+}
+#spaceFix {
+   display: block;
+   width: 100%;
+   height: 0;
+   padding-bottom: 2%;
+}
+#startEndContainer {
+   display: block;
+   width: 30%;
+   margin-left: 35%;
+   margin-bottom: 2%;
+}
+#turnContainer {
+   width: 100%;
+   height: 0;
+   padding-bottom: 15%;
+   margin-bottom: 2%;
+}
+#gameOverContainer {
+   display: block;
+   width: 100%;
+   height: 0;
+   padding-bottom: 9%;
+   margin-bottom: 2%;
+}
+.gameToggle {
+   font-size: 100%;
+   text-align: center;
+   user-select: none;
+}
+#turnDisplay {
+   width: 80%;
+   margin-left: 10%;
+}
+#gameOver {
+   font-size: 2.5vw;
+   text-align: center;
+   width: 70%;
+   margin-left: 15%;
+}
+#startEndContainer, #turnDisplay, #gameOver {
+   box-sizing: border-box;
+   background-color: #112B3C;
+   border-radius: 1vw;
+}
+
+
+#playerPiece {
+   width: 12%;
+   display: inline-block;
+   vertical-align: middle;
+   margin: 1%;
+}
+#words {
+   display: inline-block;
+   font-size: 150%;
+   vertical-align: middle;
+}
+
+
+.dash {
+   position: absolute;
+   background-color: #000000;
+   z-index: 2;
+   border-radius: 50%;
+}
+#row {
+   /*dash width = (spaceWidth*3 + (4*marginWidth))/spaceWidth
+   329.793103 = (29%*3 + (4*2.16%))/29%*/
+   width: 315.05376%;
+   height: 0px;
+   padding-bottom: 6%;
+   left: 0;
+   top: 47%;
+}
+#col {
+   /*dash width = (spaceWidth*3 + (4*marginWidth))/spaceWidth
+   329.793103 = (29%*3 + (4*2.16%))/29%*/
+   width: 6%;
+   height: 0px;
+   padding-bottom: 315.05376%;
+   left: 47%;
+   top: 0%;
+}
+#offDiag {
+   /*dash width pythagorean hypotenuse of diagonal*/
+   width: 445.553305%;
+   height: 0px;
+   padding-bottom: 6%;
+   left: 0%;
+   top: 97%;
+   transform-origin: 0% 50%;
+   transform: rotate(-45deg);
+}
+
+#mainDiag {
+   /*dash width pythagorean hypotenuse of diagonal*/
+   width: 445.553305%;
+   height: 0px;
+   padding-bottom: 6%;
+   left: 0%;
+   top: -3%;
+   transform-origin: 0% 50%;
+   transform: rotate(45deg);
+}

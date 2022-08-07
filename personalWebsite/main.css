@@ -165,7 +165,6 @@ nav a:hover::before {
    flex-basis: 60%;
    height: 100%;
    flex-shrink: 1;
-   min-width: 790px;
    margin-bottom: 100px;
 }
 .centerColumn > ul {
