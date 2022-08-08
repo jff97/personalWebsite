@@ -93,16 +93,19 @@
    font-size: 100%;
    text-align: center;
    user-select: none;
+   padding: 4px;
 }
 #turnDisplay {
    width: 80%;
    margin-left: 10%;
+   padding: 3px;
 }
 #gameOver {
-   font-size: 2.5vw;
+   font-size: 130%;
    text-align: center;
    width: 70%;
    margin-left: 15%;
+   padding: 4px;
 }
 #startEndContainer, #turnDisplay, #gameOver {
    box-sizing: border-box;

@@ -16,6 +16,7 @@ tic tac toe errors
    body {
       background-color: rgb(226, 43, 43) !important;
    }
+   /*Universal Fixes*/
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
       font-size: 80% !important;
@@ -23,18 +24,25 @@ tic tac toe errors
    .gamePics {
       width: 70% !important;
    }
+
+   
 }
 
 /*Screens between 900 and 1094 px*/
-@media only screen and (min-width: 950px) and (max-width: 1094px) {
+@media only screen and (min-width: 750px) and (max-width: 1094px) {
    body {
       background-color: rgb(226, 189, 43) !important;
 
    }
+   /*Universal Fixes*/
    /*Home Fixes*/
    .until__event, #gradDescription {
+      font-size: 90% !important;
+   }
+   .quicklinks li {
       font-size: 90%;
    }
+
 
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
@@ -49,7 +57,16 @@ tic tac toe errors
       font-size: 93% !important;
    }
    /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      padding-bottom: 80% !important;
+   }
+   #infoBox {
+      font-size: 80% !important;
+   }
 }
+
 
 
 body > * {
@@ -281,22 +298,16 @@ nav a:hover::before {
 .buttonPicture {
    width: 1.1em;
    vertical-align: middle;
-   position: absolute;
-   left: 5px;
    margin-right: 4px;
 }
 
 .downloadButton {
-   position: relative;
-   display: block;
    color:#EFEFEF;
    font-size: 110%;
    text-decoration: none;
    background-color: #205375;
    padding: 10px;
    border-radius: 7px;
-   width: 75%;
-   margin-left: 12.5%;
 }
 .downloadButton:hover {
    background-color: #2a6d9a;
@@ -309,7 +320,6 @@ nav a:hover::before {
    font-size: 17pt;
    padding-left: 100px;
    color: #EFEFEF;
-   height: 15em;
    margin-top: 1em;
 }
 .footer li > img {
@@ -340,6 +350,8 @@ nav a:hover::before {
    border-radius: 5px;
    padding-top: 3px;
    padding-bottom: 3px;
+   padding-right: 2px;
+   padding-left: 2px;
 }
 .until__event, #gradDescription {
    grid-column: span 3;
