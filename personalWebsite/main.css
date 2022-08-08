@@ -1,3 +1,57 @@
+/*Breakpoints*/
+/*
+at 1094px wide gaming breaks and the table overflows the centercolumn border
+at 970 px home breaks because the quick links box gets cut off by the footer
+at 900px wide hire me breaks and the resume download button glitches through the my links background
+at 900px wide academic breaks and the table overflows center column border
+at 644px the travel gallery pages break because the text is to big on the info panel
+at 370px travel breaks and the car picture in the header gets cut off
+
+
+tic tac toe errors
+   at 900px turn display is about to break and overlap the game over display
+*/
+/*When the screen is above 1094 px*/
+@media only screen and (min-width: 1094px) {
+   body {
+      background-color: rgb(226, 43, 43) !important;
+   }
+   /*Gaming fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 80% !important;
+   }
+   .gamePics {
+      width: 70% !important;
+   }
+}
+
+/*Screens between 900 and 1094 px*/
+@media only screen and (min-width: 950px) and (max-width: 1094px) {
+   body {
+      background-color: rgb(226, 189, 43) !important;
+
+   }
+   /*Home Fixes*/
+   .until__event, #gradDescription {
+      font-size: 90%;
+   }
+
+   /*Gaming fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .downloadButton {
+      font-size: 93% !important;
+   }
+   /*Travel fixes*/
+}
+
+
 body > * {
    box-sizing: border-box;
 }
@@ -234,15 +288,15 @@ nav a:hover::before {
 
 .downloadButton {
    position: relative;
-   display: inline-block;
+   display: block;
    color:#EFEFEF;
-   font-size: 1.3em;
+   font-size: 110%;
    text-decoration: none;
    background-color: #205375;
    padding: 10px;
    border-radius: 7px;
-   width: 12em;
-   height: 2.2em;
+   width: 75%;
+   margin-left: 12.5%;
 }
 .downloadButton:hover {
    background-color: #2a6d9a;
