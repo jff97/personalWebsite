@@ -43,7 +43,6 @@ tic tac toe errors
       font-size: 90%;
    }
 
-
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
@@ -65,6 +64,50 @@ tic tac toe errors
    #infoBox {
       font-size: 80% !important;
    }
+}
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+   body {
+      background-color: rgb(122, 226, 43) !important;
+
+   }
+   /*Universal Fixes*/
+   .leftOfMain, .rightOfMain {
+      display: none;
+   }
+   .centerColumn {
+      margin-right: 3%;
+      margin-left: 3%;
+   }
+   /*Home Fixes*/
+   .until__event, #gradDescription {
+      
+   }
+   .quicklinks li {
+      
+   }
+
+   /*Gaming fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      
+   }
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .downloadButton {
+      
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      
+   }
+   #infoBox {
+      
+   }
+   
 }
 
 
