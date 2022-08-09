@@ -24,8 +24,6 @@ tic tac toe errors
    .gamePics {
       width: 70% !important;
    }
-
-   
 }
 
 /*Screens between 900 and 1094 px*/
@@ -48,7 +46,7 @@ tic tac toe errors
       font-size: 70% !important;
    }
    .gamePics {
-      width: 60% !important;
+      width: 80% !important;
    }
    /*Academic Fixes*/
    /*professional fixes*/
@@ -78,17 +76,16 @@ tic tac toe errors
       margin-right: 3%;
       margin-left: 3%;
    }
-   /*Home Fixes*/
    .until__event, #gradDescription {
-      
+      font-size: 90% !important;
    }
    .quicklinks li {
-      
+      font-size: 90%;
    }
 
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
-      
+      font-size: 70% !important;
    }
    .gamePics {
       width: 60% !important;
@@ -96,18 +93,130 @@ tic tac toe errors
    /*Academic Fixes*/
    /*professional fixes*/
    .downloadButton {
-      
+      font-size: 93% !important;
    }
    /*Travel fixes*/
 
    /*TicTacToe fixes*/
    #gameContainer {
-      
+      width: 80%  !important;
+      margin-left: 10% !important;
+      padding-bottom: 100% !important;
    }
    #infoBox {
-      
+      font-size: 80% !important;
    }
+}
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+   body {
+      background-color: rgb(43, 226, 183) !important;
+   }
+   /*Universal Fixes*/
+   .topHeader {
+      font-size: 270% !important;
+   }
+   .leftOfMain, .rightOfMain {
+      display: none;
+   }
+   .centerColumn {
+      margin-right: 3%;
+      margin-left: 3%;
+   }
+   .until__event, #gradDescription {
+      font-size: 90% !important;
+   }
+   .quicklinks li {
+      font-size: 90%;
+   }
+
+   /*Gaming fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .picLinks {
+      width: 75% !important;
+      margin-left: 12.5% !important;
+      margin-right: 12.5% !important;
+      font-size: 80% !important;
+   }
+   .downloadButton {
+      font-size: 65% !important;
+      padding: 5px !important;
+   }
+   .linkLogo {
+      width: 85% !important;
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 85%  !important;
+      margin-left: 7.5% !important;
+      padding-bottom: 115% !important;
+   }
+   #infoBox {
+      font-size: 80% !important;
+   }
+}
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+   body {
+      background-color: rgb(43, 52, 226) !important;
+
+   }
+   /*Universal Fixes*/
+   .leftOfMain, .rightOfMain {
+      display: none;
+   }
+   .centerColumn {
+      margin-right: 3%;
+      margin-left: 3%;
+   }
+   .until__event, #gradDescription {
+      font-size: 90% !important;
+   }
+   .quicklinks li {
+      font-size: 90%;
+   }
+
+   /*Gaming fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
    
+   .picLinks {
+      width: 75% !important;
+      margin-left: 12.5% !important;
+      margin-right: 12.5% !important;
+      font-size: 80% !important;
+   }
+   .downloadButton {
+      font-size: 40% !important;
+      padding: 5px !important;
+   }
+   .linkLogo {
+      width: 95% !important;
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 80%  !important;
+      margin-left: 10% !important;
+      padding-bottom: 100% !important;
+   }
+   #infoBox {
+      font-size: 80% !important;
+   }
 }
 
 
@@ -183,7 +292,7 @@ nav a:hover::before {
 }
 .topHeader {
    font-family:'Courier New', Courier, monospace;
-   font-size: 45pt;
+   font-size: 350%;
    text-align: center;
    color: #EFEFEF;
 }
@@ -225,8 +334,8 @@ nav a:hover::before {
    border: 2px solid #112B3C;
    padding-top: 14px;
    padding-bottom: 14px;
-   padding-left: 5px;
-   padding-right: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
    text-align: center;
 }
 .topDescription {
@@ -300,10 +409,10 @@ nav a:hover::before {
 }
 .headerLogo {
    vertical-align: middle;
-   height: 200px;
+   height: 27vw;
 }
 .linkLogo {
-   width: 110px;
+   width: 60%;
    border: 3px solid #EFEFEF;
    border-radius: 15px;
    padding: 6px;
@@ -329,6 +438,7 @@ nav a:hover::before {
 }
 .picLinks h1 {
    text-align: center;
+   font-size: 200%;
 }
 .picLinks ul {
    text-align: center;
@@ -336,7 +446,7 @@ nav a:hover::before {
    padding: 0;
 }
 .moreMargin {
-   margin-bottom: 27px;
+   margin-bottom: 12%;
 }
 .buttonPicture {
    width: 1.1em;
@@ -349,7 +459,7 @@ nav a:hover::before {
    font-size: 110%;
    text-decoration: none;
    background-color: #205375;
-   padding: 10px;
+   padding: 7px;
    border-radius: 7px;
 }
 .downloadButton:hover {

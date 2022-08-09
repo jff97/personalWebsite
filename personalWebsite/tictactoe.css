@@ -93,7 +93,7 @@
    font-size: 100%;
    text-align: center;
    user-select: none;
-   padding: 4px;
+   padding: 6px;
 }
 #turnDisplay {
    width: 80%;
@@ -105,7 +105,7 @@
    text-align: center;
    width: 70%;
    margin-left: 15%;
-   padding: 4px;
+   padding: 6px;
 }
 #startEndContainer, #turnDisplay, #gameOver {
    box-sizing: border-box;
