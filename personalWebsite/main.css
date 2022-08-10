@@ -1,7 +1,4 @@
-/*Breakpoints
-
-
-*/
+/*Breakpoints*/
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
    body {
@@ -14,6 +11,11 @@
    }
    .headerLogo {
       height: 21vw !important;
+   }
+   /*Travel fixes*/
+   #us-map{
+      left: 20% !important;
+      width: 60% !important;
    }
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
@@ -28,7 +30,6 @@
 @media only screen and (min-width: 750px) and (max-width: 1094px) {
    body {
       background-color: rgb(226, 189, 43) !important;
-
    }
    /*Universal Fixes*/
    /*Home Fixes*/
@@ -52,7 +53,10 @@
       font-size: 93% !important;
    }
    /*Travel fixes*/
-
+   #us-map {
+      left: 15% !important;
+      width: 70% !important;
+   }
    /*TicTacToe fixes*/
    #gameContainer {
       padding-bottom: 80% !important;
@@ -64,7 +68,6 @@
 @media only screen and (min-width: 550px) and (max-width: 750px) {
    body {
       background-color: rgb(122, 226, 43) !important;
-
    }
    /*Universal Fixes*/
    .leftOfMain, .rightOfMain {
@@ -89,7 +92,7 @@
       width: 60% !important;
    }
    /*Academic Fixes*/
-   /*professional fixes*/
+   /*Professional fixes*/
    .downloadButton {
       font-size: 93% !important;
    }
@@ -152,7 +155,7 @@
       padding: 5px !important;
    }
    .linkLogo {
-      width: 85% !important;
+      width: 75% !important;
    }
    /*Travel fixes*/
 
@@ -160,18 +163,23 @@
    #gameContainer {
       width: 85%  !important;
       margin-left: 7.5% !important;
-      padding-bottom: 115% !important;
+      padding-bottom: 125% !important;
    }
    #infoBox {
-      font-size: 80% !important;
+      font-size:75% !important;
    }
 }
-@media only screen and (min-width: 200px) and (max-width: 320px) {
+@media only screen and (min-width: 0px) and (max-width: 320px) {
    body {
       background-color: rgb(43, 52, 226) !important;
-
    }
    /*Universal Fixes*/
+   .centerColumn {
+      border: 12px solid #205375 !important;
+   }
+   .topHeader {
+      font-size: 270% !important;
+   }
    .footer {
       font-size: 60% !important;
    }
@@ -179,8 +187,8 @@
       display: none;
    }
    .centerColumn {
-      margin-right: 3%;
-      margin-left: 3%;
+      margin-right: 0%;
+      margin-left: 0%;
    }
    .until__event, #gradDescription {
       font-size: 90% !important;
@@ -191,7 +199,7 @@
 
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
-      font-size: 70% !important;
+      font-size: 50% !important;
    }
    .gamePics {
       width: 60% !important;
@@ -216,12 +224,12 @@
 
    /*TicTacToe fixes*/
    #gameContainer {
-      width: 80%  !important;
-      margin-left: 10% !important;
-      padding-bottom: 100% !important;
+      width: 84%  !important;
+      margin-left: 8% !important;
+      padding-bottom: 120% !important;
    }
    #infoBox {
-      font-size: 80% !important;
+      font-size: 60% !important;
    }
 }
 
@@ -418,7 +426,7 @@ nav a:hover::before {
    height: 27vw;
 }
 .linkLogo {
-   width: 60%;
+   width: 30%;
    border: 3px solid #EFEFEF;
    border-radius: 15px;
    padding: 6px;
@@ -502,7 +510,7 @@ nav a:hover::before {
 .until {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 1em;  
+   gap: 1em;
 }
 
 .until__component {
