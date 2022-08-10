@@ -1,15 +1,6 @@
-/*Breakpoints*/
-/*
-at 1094px wide gaming breaks and the table overflows the centercolumn border
-at 970 px home breaks because the quick links box gets cut off by the footer
-at 900px wide hire me breaks and the resume download button glitches through the my links background
-at 900px wide academic breaks and the table overflows center column border
-at 644px the travel gallery pages break because the text is to big on the info panel
-at 370px travel breaks and the car picture in the header gets cut off
+/*Breakpoints
 
 
-tic tac toe errors
-   at 900px turn display is about to break and overlap the game over display
 */
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
@@ -17,6 +8,13 @@ tic tac toe errors
       background-color: rgb(226, 43, 43) !important;
    }
    /*Universal Fixes*/
+   .footer li > img {
+      vertical-align: middle;
+      width: 4% !important;
+   }
+   .headerLogo {
+      height: 21vw !important;
+   }
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
       font-size: 80% !important;
@@ -46,7 +44,7 @@ tic tac toe errors
       font-size: 70% !important;
    }
    .gamePics {
-      width: 80% !important;
+      width: 90% !important;
    }
    /*Academic Fixes*/
    /*professional fixes*/
@@ -112,6 +110,9 @@ tic tac toe errors
       background-color: rgb(43, 226, 183) !important;
    }
    /*Universal Fixes*/
+   .centerColumn {
+      border: 18px solid #205375 !important;
+   }
    .topHeader {
       font-size: 270% !important;
    }
@@ -131,7 +132,9 @@ tic tac toe errors
 
    /*Gaming fixes*/
    .tableStyle1 td, .tableStyle1 th {
-      font-size: 70% !important;
+      font-size: 50% !important;
+      border: 1px solid black !important;
+
    }
    .gamePics {
       width: 60% !important;
@@ -169,6 +172,9 @@ tic tac toe errors
 
    }
    /*Universal Fixes*/
+   .footer {
+      font-size: 60% !important;
+   }
    .leftOfMain, .rightOfMain {
       display: none;
    }
@@ -332,8 +338,8 @@ nav a:hover::before {
 }
 .tableStyle1 td, .tableStyle1 th {
    border: 2px solid #112B3C;
-   padding-top: 14px;
-   padding-bottom: 14px;
+   padding-top: 10px;
+   padding-bottom: 10px;
    padding-left: 3px;
    padding-right: 3px;
    text-align: center;
@@ -446,7 +452,8 @@ nav a:hover::before {
    padding: 0;
 }
 .moreMargin {
-   margin-bottom: 12%;
+   margin-top: 5%;
+   margin-bottom: 9%;
 }
 .buttonPicture {
    width: 1.1em;
@@ -469,15 +476,16 @@ nav a:hover::before {
 
 .footer {
    background-color:#205375;
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 17pt;
-   padding-left: 100px;
    color: #EFEFEF;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 110%;
+   padding-left: 8%;
    margin-top: 1em;
+   padding-bottom: 1%;
 }
 .footer li > img {
    vertical-align: middle;
-   width: 60px;
+   width: 6%;
 }
 .footer > ul {
    list-style: none;
