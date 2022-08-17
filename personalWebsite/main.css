@@ -435,8 +435,6 @@ nav a:hover::before {
 .downloadButton:hover {
    background-color: #2a6d9a;
 }
-
-
 .footer {
    background-color:var(--bright);
    color: var(--offWhite);
@@ -455,19 +453,27 @@ nav a:hover::before {
    text-align: left;
 }
 .until, .quicklinks {
-   border: 4px solid var(--brightContrast);
    border-radius: 25px;
    background-color: var(--bright);
    color: var(--offWhite);
-   padding: 22px;
-   margin: 1em;
 }
 .until {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 1em;
+   gap: 3%;
+   padding: 5%;
+   /*Margin determines the size of the grad display*/
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 3%;
+   margin-bottom: 3%;
 }
-
+.quicklinks {
+   margin-left: 15%;
+   margin-right: 15%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+}
 .until__component {
    text-align: center;
    background-color: var(--dark);
@@ -480,6 +486,7 @@ nav a:hover::before {
 .until__event, #gradDescription {
    grid-column: span 3;
    text-align: center;
+   margin-bottom: 1%;
 }
 #gradCountImg {
    width: 100%;
@@ -487,6 +494,14 @@ nav a:hover::before {
 .until__numeric {
    font-weight: bold;
    font-size: larger;
+}
+#bio a { 
+   text-decoration: none;
+   color: var(--bright);
+}
+#bio p {
+   margin-left: 6%;
+   font-size: 120%;
 }
 
 
