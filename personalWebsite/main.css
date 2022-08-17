@@ -1,3 +1,11 @@
+/*Global CSS Variables*/
+:root {
+   --dark: #112B3C;
+   --brightContrast: #F66B0E;
+   --bright: #205375;
+   --offWhite: #EFEFEF;
+}
+
 /*Breakpoints*/
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
@@ -92,7 +100,7 @@
 @media only screen and (min-width: 320px) and (max-width: 550px) {
    /*Universal Fixes*/
    .centerColumn {
-      border: 18px solid #205375 !important;
+      border: 18px solid var(--bright) !important;
    }
    .topHeader {
       font-size: 270% !important;
@@ -139,7 +147,7 @@
 @media only screen and (min-width: 0px) and (max-width: 320px) {
    /*Universal Fixes*/
    .centerColumn {
-      border: 12px solid #205375 !important;
+      border: 12px solid var(--bright) !important;
       font-size: 60% !important;
    }
    .topHeader {
@@ -194,7 +202,7 @@ body > * {
 }
 body {
    position: relative;
-   background-color: #112B3C;
+   background-color: var(--dark);
    margin: 0;
    font-family: Arial, Helvetica, sans-serif;
 }
@@ -203,7 +211,7 @@ body {
    margin: 0 auto;
 }
 .navHeader {
-   background-color: #205375;
+   background-color: var(--bright);
    width: 100%;
 }
 
@@ -237,7 +245,7 @@ nav li {
    position: sticky;
 }
 nav a {
-   color: #EFEFEF;
+   color: var(--offWhite);
    text-decoration: none;
    text-transform: uppercase;
    font-size: 14px;
@@ -251,7 +259,7 @@ nav a::before {
    height: 8px;
    width: 0%;
    position: absolute;
-   background-color: #F66B0E;
+   background-color: var(--brightContrast);
    top: 0;
    transition: all ease-in-out 100ms;
 }
@@ -262,7 +270,7 @@ nav a:hover::before {
    font-family:'Courier New', Courier, monospace;
    font-size: 350%;
    text-align: center;
-   color: #EFEFEF;
+   color: var(--offWhite);
 }
 #animaitonContainer {
    position: relative;
@@ -272,7 +280,7 @@ nav a:hover::before {
 
 #animation1 {
    position: absolute;
-   background-color: #F66B0E;
+   background-color: var(--brightContrast);
    height: 10vw;
    width: 10vw;
    animation-name: visor;
@@ -299,7 +307,7 @@ nav a:hover::before {
    width: 100%;
 }
 .tableStyle1 td, .tableStyle1 th {
-   border: 2px solid #112B3C;
+   border: 2px solid var(--dark);
    padding-top: 10px;
    padding-bottom: 10px;
    padding-left: 3px;
@@ -307,13 +315,13 @@ nav a:hover::before {
    text-align: center;
 }
 .topDescription {
-   color: #112B3C;
+   color: var(--dark);
    font-size: xx-large;
    margin-top: 0px;
    text-align: center;
 }
 .orderedList1 {
-   border-top: 40px solid #EFEFEF;
+   border-top: 40px solid var(--offWhite);
    margin-top: 0px;
 }
 .gamePics {
@@ -329,7 +337,7 @@ nav a:hover::before {
    background-color: black;
 }
 .outsidelinks {
-   color: #EFEFEF;
+   color: var(--offWhite);
 }
 .outsidelinks:hover {
    color: lightgrey;
@@ -343,10 +351,10 @@ nav a:hover::before {
 }
 .centerColumn {
    width: 60%;
-   background-color: #F66B0E;
-   border: 30px solid #205375;
+   background-color: var(--brightContrast);
+   border: 30px solid var(--bright);
    border-radius: 20px;
-   color: #112B3C;
+   color: var(--dark);
    padding: .5%;
    flex-wrap: wrap;
    flex: 700;
@@ -360,7 +368,7 @@ nav a:hover::before {
    text-align: center;
 }
 .columnInnrBordr {
-   border: 5px solid #112B3C;
+   border: 5px solid var(--dark);
 }
 .leftOfMain, .rightOfMain {
    flex: 1;
@@ -374,24 +382,24 @@ nav a:hover::before {
 }
 .linkLogo {
    width: 35%;
-   border: 3px solid #EFEFEF;
+   border: 3px solid var(--offWhite);
    border-radius: 15px;
    padding: 6px;
 }
 .linkLogo:hover {
-   border: 3px solid #112B3C;
+   border: 3px solid var(--dark);
    border-radius: 15px;
    transition: all ease-in-out 300ms;
 }
 
 .picLinks {
-   background-color: #EFEFEF;
-   color: #112B3C;
+   background-color: var(--offWhite);
+   color: var(--dark);
    width: 60%;
    margin-right: 20%;
    margin-left: 20%;
    box-sizing: border-box;
-   border: 3px solid #205375;
+   border: 3px solid var(--bright);
    border-radius: 15px;
    margin-top: 15px;
    margin-bottom: 15px;
@@ -417,10 +425,10 @@ nav a:hover::before {
 }
 
 .downloadButton {
-   color:#EFEFEF;
+   color:var(--offWhite);
    font-size: 90%;
    text-decoration: none;
-   background-color: #205375;
+   background-color: var(--bright);
    padding: 3%;
    border-radius: 7px;
 }
@@ -430,8 +438,8 @@ nav a:hover::before {
 
 
 .footer {
-   background-color:#205375;
-   color: #EFEFEF;
+   background-color:var(--bright);
+   color: var(--offWhite);
    font-family: 'Courier New', Courier, monospace;
    font-size: 110%;
    padding-left: 8%;
@@ -447,10 +455,10 @@ nav a:hover::before {
    text-align: left;
 }
 .until, .quicklinks {
-   border: 4px solid #F66B0E;
+   border: 4px solid var(--brightContrast);
    border-radius: 25px;
-   background-color: #205375;
-   color: #EFEFEF;
+   background-color: var(--bright);
+   color: var(--offWhite);
    padding: 22px;
    margin: 1em;
 }
@@ -462,7 +470,7 @@ nav a:hover::before {
 
 .until__component {
    text-align: center;
-   background-color: #112B3C;
+   background-color: var(--dark);
    border-radius: 5px;
    padding-top: 3px;
    padding-bottom: 3px;
