@@ -1,3 +1,194 @@
+/*Breakpoints*/
+/*When the screen is above 1094 px*/
+@media only screen and (min-width: 1094px) {
+   /*Universal Fixes*/
+   .footer li > img {
+      width: 4% !important;
+   }
+   .headerLogo {
+      height: 21vw !important;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 80% !important;
+   }
+   /*Travel fixes*/
+   #us-map{
+      left: 20% !important;
+      width: 60% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 70% !important;
+   }
+   /*TicTacToe fixes*/
+   #gameContainer {
+      padding-bottom: 79% !important;
+   }
+}
+
+/*Screens between 900 and 1094 px*/
+@media only screen and (min-width: 750px) and (max-width: 1094px) {
+   /*Universal Fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .linkLogo {
+      width: 55% !important;
+   }
+   .centerColumn {
+      font-size: 75% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 90% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   /*Travel fixes*/
+   #us-map {
+      left: 15% !important;
+      width: 70% !important;
+   }
+   /*TicTacToe fixes*/
+   #gameContainer {
+      padding-bottom: 85% !important;
+   }
+   
+}
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+   /*Universal Fixes*/
+   .leftOfMain, .rightOfMain {
+      display: none !important;
+   }
+   .centerColumn {
+      margin-right: 3% !important;
+      margin-left: 3% !important;
+      font-size: 85% !important;
+   }
+   .quicklinks li {
+      font-size: 90%;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .linkLogo {
+      width: 50% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*Professional fixes*/
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 80%  !important;
+      margin-left: 10% !important;
+      padding-bottom: 100% !important;
+   }
+}
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+   /*Universal Fixes*/
+   .centerColumn {
+      border: 18px solid #205375 !important;
+   }
+   .topHeader {
+      font-size: 270% !important;
+   }
+   .leftOfMain, .rightOfMain {
+      display: none !important;
+   }
+   .centerColumn {
+      margin-right: 3%;
+      margin-left: 3%;
+      font-size: 80% !important;
+   }
+   .quicklinks li {
+      font-size: 90% !important;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 50% !important;
+      border: 1px solid black !important;
+   }
+   .linkLogo {
+      width: 52% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .picLinks {
+      width: 75% !important;
+      margin-left: 12.5% !important;
+      margin-right: 12.5% !important;
+      font-size: 80% !important;
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 85%  !important;
+      margin-left: 7.5% !important;
+      padding-bottom: 110% !important;
+   }
+}
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+   /*Universal Fixes*/
+   .centerColumn {
+      border: 12px solid #205375 !important;
+      font-size: 60% !important;
+   }
+   .topHeader {
+      font-size: 270% !important;
+   }
+   .footer {
+      font-size: 60% !important;
+   }
+   .leftOfMain, .rightOfMain {
+      display: none;
+   }
+   .centerColumn {
+      margin-right: 0%;
+      margin-left: 0%;
+   }
+   .quicklinks li {
+      font-size: 90% !important;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 50% !important;
+      border: 1px solid black !important;
+   }
+   .linkLogo {
+      width: 95% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .picLinks {
+      width: 75% !important;
+      margin-left: 12.5% !important;
+      margin-right: 12.5% !important;
+      font-size: 80% !important;
+   }
+   .downloadButton {
+      font-size: 60% !important;
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 84%  !important;
+      margin-left: 8% !important;
+      padding-bottom: 120% !important;
+   }
+}
 body > * {
    box-sizing: border-box;
 }
@@ -69,7 +260,7 @@ nav a:hover::before {
 }
 .topHeader {
    font-family:'Courier New', Courier, monospace;
-   font-size: 45pt;
+   font-size: 350%;
    text-align: center;
    color: #EFEFEF;
 }
@@ -109,10 +300,10 @@ nav a:hover::before {
 }
 .tableStyle1 td, .tableStyle1 th {
    border: 2px solid #112B3C;
-   padding-top: 14px;
-   padding-bottom: 14px;
-   padding-left: 5px;
-   padding-right: 5px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 3px;
+   padding-right: 3px;
    text-align: center;
 }
 .topDescription {
@@ -133,11 +324,9 @@ nav a:hover::before {
 }
 .resume {
    width: 100%;
-   height: 100vh;
+   height: 90vh;
    border: 3px solid black;
    background-color: black;
-   padding: 0px;
-   margin: 0px;
 }
 .outsidelinks {
    color: #EFEFEF;
@@ -158,25 +347,20 @@ nav a:hover::before {
    border: 30px solid #205375;
    border-radius: 20px;
    color: #112B3C;
-   padding: 0px;
+   padding: .5%;
    flex-wrap: wrap;
-   box-sizing: border-box;
    flex: 700;
    flex-basis: 60%;
    height: 100%;
    flex-shrink: 1;
    margin-bottom: 100px;
 }
-.centerColumn > ul {
-   text-align: left;
-   font-size: 18pt;
-   margin-left: 31%;
-}
+
 .centerColumn > h1, .centerColumn > h2 {
    text-align: center;
 }
 .columnInnrBordr {
-   border: 5px solid#112B3C;
+   border: 5px solid #112B3C;
 }
 .leftOfMain, .rightOfMain {
    flex: 1;
@@ -186,10 +370,10 @@ nav a:hover::before {
 }
 .headerLogo {
    vertical-align: middle;
-   height: 200px;
+   height: 27vw;
 }
 .linkLogo {
-   width: 110px;
+   width: 35%;
    border: 3px solid #EFEFEF;
    border-radius: 15px;
    padding: 6px;
@@ -215,6 +399,7 @@ nav a:hover::before {
 }
 .picLinks h1 {
    text-align: center;
+   font-size: 200%;
 }
 .picLinks ul {
    text-align: center;
@@ -222,27 +407,22 @@ nav a:hover::before {
    padding: 0;
 }
 .moreMargin {
-   margin-bottom: 27px;
+   margin-top: 5%;
+   margin-bottom: 9%;
 }
 .buttonPicture {
    width: 1.1em;
    vertical-align: middle;
-   position: absolute;
-   left: 5px;
    margin-right: 4px;
 }
 
 .downloadButton {
-   position: relative;
-   display: inline-block;
    color:#EFEFEF;
-   font-size: 1.3em;
+   font-size: 90%;
    text-decoration: none;
    background-color: #205375;
-   padding: 10px;
+   padding: 3%;
    border-radius: 7px;
-   width: 12em;
-   height: 2.2em;
 }
 .downloadButton:hover {
    background-color: #2a6d9a;
@@ -251,16 +431,16 @@ nav a:hover::before {
 
 .footer {
    background-color:#205375;
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 17pt;
-   padding-left: 100px;
    color: #EFEFEF;
-   height: 15em;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 110%;
+   padding-left: 8%;
    margin-top: 1em;
+   padding-bottom: 1%;
 }
 .footer li > img {
    vertical-align: middle;
-   width: 60px;
+   width: 6%;
 }
 .footer > ul {
    list-style: none;
@@ -277,7 +457,7 @@ nav a:hover::before {
 .until {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap: 1em;  
+   gap: 1em;
 }
 
 .until__component {
@@ -286,6 +466,8 @@ nav a:hover::before {
    border-radius: 5px;
    padding-top: 3px;
    padding-bottom: 3px;
+   padding-right: 2px;
+   padding-left: 2px;
 }
 .until__event, #gradDescription {
    grid-column: span 3;
@@ -345,10 +527,17 @@ nav a:hover::before {
  }
 /*End the flexbox styling from class*/
 .galleryIcon {
-   width: 50px;
+   width: 15%;
    vertical-align: middle;
 }
-
+.galleryList {
+   padding: 0;
+   list-style-position: inside;
+   font-size: 120%;
+}
+.centered {
+   text-align: center;
+}
 
 
 
