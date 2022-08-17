@@ -1,9 +1,6 @@
 /*Breakpoints*/
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
-   body {
-      background-color: rgb(226, 43, 43) !important;
-   }
    /*Universal Fixes*/
    .footer li > img {
       width: 4% !important;
@@ -31,9 +28,6 @@
 
 /*Screens between 900 and 1094 px*/
 @media only screen and (min-width: 750px) and (max-width: 1094px) {
-   body {
-      background-color: rgb(226, 189, 43) !important;
-   }
    /*Universal Fixes*/
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
@@ -62,9 +56,6 @@
    
 }
 @media only screen and (min-width: 550px) and (max-width: 750px) {
-   body {
-      background-color: rgb(122, 226, 43) !important;
-   }
    /*Universal Fixes*/
    .leftOfMain, .rightOfMain {
       display: none !important;
@@ -99,9 +90,6 @@
    }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
-   body {
-      background-color: rgb(43, 226, 183) !important;
-   }
    /*Universal Fixes*/
    .centerColumn {
       border: 18px solid #205375 !important;
@@ -149,9 +137,6 @@
    }
 }
 @media only screen and (min-width: 0px) and (max-width: 320px) {
-   body {
-      background-color: rgb(43, 52, 226) !important;
-   }
    /*Universal Fixes*/
    .centerColumn {
       border: 12px solid #205375 !important;
