@@ -1,8 +1,14 @@
 /*Global CSS Variables*/
 :root {
-   --dark: #112B3C;
+   /*Old Colors
+   112B3C
+   F66B0E
+   205375
+   EFEFEF
+   */
+   --dark: #002E4D;
    --brightContrast: #F66B0E;
-   --bright: #205375;
+   --bright: #0065A8;
    --offWhite: #EFEFEF;
 }
 
