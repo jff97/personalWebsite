@@ -1,0 +1,572 @@
+/*Global CSS Variables*/
+:root {
+   /*Old Colors
+   112B3C
+   F66B0E
+   205375
+   EFEFEF
+   */
+   --dark: #002E4D;
+   --brightContrast: #F66B0E;
+   --bright: #0065A8;
+   --offWhite: #EFEFEF;
+}
+
+/*Breakpoints*/
+/*When the screen is above 1094 px*/
+@media only screen and (min-width: 1094px) {
+   /*Universal Fixes*/
+   .footer li > img {
+      width: 4% !important;
+   }
+   .headerLogo {
+      height: 21vw !important;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 80% !important;
+   }
+   /*Travel fixes*/
+   #us-map{
+      left: 20% !important;
+      width: 60% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 70% !important;
+   }
+   /*TicTacToe fixes*/
+   #gameContainer {
+      padding-bottom: 79% !important;
+   }
+}
+
+/*Screens between 900 and 1094 px*/
+@media only screen and (min-width: 750px) and (max-width: 1094px) {
+   /*Universal Fixes*/
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .linkLogo {
+      width: 55% !important;
+   }
+   .centerColumn {
+      font-size: 75% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 90% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   /*Travel fixes*/
+   #us-map {
+      left: 15% !important;
+      width: 70% !important;
+   }
+   /*TicTacToe fixes*/
+   #gameContainer {
+      padding-bottom: 85% !important;
+   }
+   
+}
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+   /*Universal Fixes*/
+   .leftOfMain, .rightOfMain {
+      display: none !important;
+   }
+   .centerColumn {
+      margin-right: 3% !important;
+      margin-left: 3% !important;
+      font-size: 85% !important;
+   }
+   .quicklinks li {
+      font-size: 90%;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 70% !important;
+   }
+   .linkLogo {
+      width: 50% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*Professional fixes*/
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 80%  !important;
+      margin-left: 10% !important;
+      padding-bottom: 100% !important;
+   }
+}
+@media only screen and (min-width: 320px) and (max-width: 550px) {
+   /*Universal Fixes*/
+   .centerColumn {
+      border: 18px solid var(--bright) !important;
+   }
+   .topHeader {
+      font-size: 270% !important;
+   }
+   .leftOfMain, .rightOfMain {
+      display: none !important;
+   }
+   .centerColumn {
+      margin-right: 3%;
+      margin-left: 3%;
+      font-size: 80% !important;
+   }
+   .quicklinks li {
+      font-size: 90% !important;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 50% !important;
+      border: 1px solid black !important;
+   }
+   .linkLogo {
+      width: 52% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .picLinks {
+      width: 75% !important;
+      margin-left: 12.5% !important;
+      margin-right: 12.5% !important;
+      font-size: 80% !important;
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 85%  !important;
+      margin-left: 7.5% !important;
+      padding-bottom: 110% !important;
+   }
+}
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+   /*Universal Fixes*/
+   .centerColumn {
+      border: 12px solid var(--bright) !important;
+      font-size: 60% !important;
+   }
+   .topHeader {
+      font-size: 270% !important;
+   }
+   .footer {
+      font-size: 60% !important;
+   }
+   .leftOfMain, .rightOfMain {
+      display: none;
+   }
+   .centerColumn {
+      margin-right: 0%;
+      margin-left: 0%;
+   }
+   .quicklinks li {
+      font-size: 90% !important;
+   }
+   .tableStyle1 td, .tableStyle1 th {
+      font-size: 50% !important;
+      border: 1px solid black !important;
+   }
+   .linkLogo {
+      width: 95% !important;
+   }
+   /*Gaming fixes*/
+   .gamePics {
+      width: 60% !important;
+   }
+   /*Academic Fixes*/
+   /*professional fixes*/
+   .picLinks {
+      width: 75% !important;
+      margin-left: 12.5% !important;
+      margin-right: 12.5% !important;
+      font-size: 80% !important;
+   }
+   .downloadButton {
+      font-size: 60% !important;
+   }
+   /*Travel fixes*/
+
+   /*TicTacToe fixes*/
+   #gameContainer {
+      width: 84%  !important;
+      margin-left: 8% !important;
+      padding-bottom: 120% !important;
+   }
+}
+body > * {
+   box-sizing: border-box;
+}
+body {
+   position: relative;
+   background-color: var(--dark);
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+   width: 90%;
+   margin: 0 auto;
+}
+.navHeader {
+   background-color: var(--bright);
+   width: 100%;
+}
+
+header::after {
+   content: '';
+   display: table;
+   clear: both;
+}
+.logo {
+   height: 55px;
+   float: left;
+}
+nav {
+   float: right;
+}
+nav img {
+   height: 25px;
+   margin-right: 5px;
+   vertical-align: middle;
+}
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+nav li {
+   display: inline-block;
+   margin-left: 45px;
+   padding-top: 17px;
+   padding-bottom: 17px;
+   position: sticky;
+}
+nav a {
+   color: var(--offWhite);
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 14px;
+}
+nav a:hover {
+   color: lightgray;
+}
+nav a::before {
+   content: '';
+   display: block;
+   height: 8px;
+   width: 0%;
+   position: absolute;
+   background-color: var(--brightContrast);
+   top: 0;
+   transition: all ease-in-out 100ms;
+}
+nav a:hover::before {
+   width: 100%;
+}
+.topHeader {
+   font-family:'Courier New', Courier, monospace;
+   font-size: 350%;
+   text-align: center;
+   color: var(--offWhite);
+}
+#animaitonContainer {
+   position: relative;
+   height: 10vw;
+   width: 100%;
+}
+
+#animation1 {
+   position: absolute;
+   background-color: var(--brightContrast);
+   height: 10vw;
+   width: 10vw;
+   animation-name: visor;
+   animation-duration: 10s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+   border-radius: 50%;
+   text-align: center;
+   vertical-align: middle;
+}
+@keyframes visor {
+   0% {
+      transform: translateX(0%);
+   }
+   50% {
+      transform: translateX(89vw);
+   }
+   100% {
+      transform: translateX(0%);
+   }
+}
+.tableStyle1 {
+   padding: 10px;
+   width: 100%;
+}
+.tableStyle1 td, .tableStyle1 th {
+   border: 2px solid var(--dark);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 3px;
+   padding-right: 3px;
+   text-align: center;
+}
+.topDescription {
+   color: var(--dark);
+   font-size: xx-large;
+   margin-top: 0px;
+   text-align: center;
+}
+.orderedList1 {
+   border-top: 40px solid var(--offWhite);
+   margin-top: 0px;
+}
+.gamePics {
+   width: 200px;
+}
+#test {
+   width: 20%;
+}
+.resume {
+   width: 100%;
+   height: 90vh;
+   border: 3px solid black;
+   background-color: black;
+}
+.outsidelinks {
+   color: var(--offWhite);
+}
+.outsidelinks:hover {
+   color: lightgrey;
+}
+.quicklinks li {
+   margin-top: 10px;
+}
+.flexContainer {
+   display: flex;
+   flex-direction: row;
+}
+.centerColumn {
+   width: 60%;
+   background-color: var(--brightContrast);
+   border: 30px solid var(--bright);
+   border-radius: 20px;
+   color: var(--dark);
+   padding: .5%;
+   flex-wrap: wrap;
+   flex: 700;
+   flex-basis: 60%;
+   height: 100%;
+   flex-shrink: 1;
+   margin-bottom: 100px;
+}
+
+.centerColumn > h1, .centerColumn > h2 {
+   text-align: center;
+}
+.columnInnrBordr {
+   border: 5px solid var(--dark);
+}
+.leftOfMain, .rightOfMain {
+   flex: 1;
+   height: 100%;   
+   flex-basis: 20%;
+   flex-shrink: 100;
+}
+.headerLogo {
+   vertical-align: middle;
+   height: 27vw;
+}
+.linkLogo {
+   width: 35%;
+   border: 3px solid var(--offWhite);
+   border-radius: 15px;
+   padding: 6px;
+}
+.linkLogo:hover {
+   border: 3px solid var(--dark);
+   border-radius: 15px;
+   transition: all ease-in-out 300ms;
+}
+
+.picLinks {
+   background-color: var(--offWhite);
+   color: var(--dark);
+   width: 60%;
+   margin-right: 20%;
+   margin-left: 20%;
+   box-sizing: border-box;
+   border: 3px solid var(--bright);
+   border-radius: 15px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding: 20px;
+}
+.picLinks h1 {
+   text-align: center;
+   font-size: 200%;
+}
+.picLinks ul {
+   text-align: center;
+   list-style-type: none;
+   padding: 0;
+}
+.moreMargin {
+   margin-top: 5%;
+   margin-bottom: 9%;
+}
+.buttonPicture {
+   width: 1.1em;
+   vertical-align: middle;
+   margin-right: 4px;
+}
+
+.downloadButton {
+   color:var(--offWhite);
+   font-size: 90%;
+   text-decoration: none;
+   background-color: var(--bright);
+   padding: 3%;
+   border-radius: 7px;
+}
+.downloadButton:hover {
+   background-color: #2a6d9a;
+}
+.footer {
+   background-color:var(--bright);
+   color: var(--offWhite);
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 110%;
+   padding-left: 8%;
+   margin-top: 1em;
+   padding-bottom: 1%;
+}
+.footer li > img {
+   vertical-align: middle;
+   width: 6%;
+}
+.footer > ul {
+   list-style: none;
+   text-align: left;
+}
+.until, .quicklinks {
+   border-radius: 25px;
+   background-color: var(--bright);
+   color: var(--offWhite);
+}
+.until {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3%;
+   padding: 5%;
+   /*Margin determines the size of the grad display*/
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+.quicklinks {
+   margin-left: 15%;
+   margin-right: 15%;
+   padding-top: 2%;
+   padding-bottom: 2%;
+}
+.until__component {
+   text-align: center;
+   background-color: var(--dark);
+   border-radius: 5px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   padding-right: 2px;
+   padding-left: 2px;
+}
+.until__event, #gradDescription {
+   grid-column: span 3;
+   text-align: center;
+   margin-bottom: 1%;
+}
+#gradCountImg {
+   width: 100%;
+}
+.until__numeric {
+   font-weight: bold;
+   font-size: larger;
+}
+#bio a { 
+   text-decoration: none;
+   color: var(--bright);
+}
+#bio p {
+   margin-left: 6%;
+   font-size: 120%;
+}
+
+
+/*Start the flexbox styling from class*/
+* {
+   box-sizing: border-box;
+ }
+ /*
+ .header {
+   text-align: center;
+   padding: 32px;
+ }
+ */
+ 
+ .picFlow {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+ }
+ 
+ /* Create four equal columns that sits next to each other */
+ .picFlow > img {
+   flex-wrap: wrap;
+   flex: 33%;
+   max-width: 33%;
+   padding: 0 4px;
+   margin-top: 8px;
+   vertical-align: middle;
+   align-self: center;
+ }
+ 
+ /* Responsive layout - makes a two column-layout instead of three columns */
+ @media (max-width: 800px) {
+   .picFlow > img {
+     flex: 50%;
+     max-width: 50%;
+   }
+ }
+ 
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media (max-width: 600px) {
+   .picFlow > img {
+     flex: 100%;
+     max-width: 100%;
+   }
+ }
+/*End the flexbox styling from class*/
+.galleryIcon {
+   width: 15%;
+   vertical-align: middle;
+}
+.galleryList {
+   padding: 0;
+   list-style-position: inside;
+   font-size: 120%;
+}
+.centered {
+   text-align: center;
+}
+
+
+
