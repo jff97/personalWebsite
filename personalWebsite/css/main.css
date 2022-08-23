@@ -450,7 +450,7 @@ nav a:hover::before {
    margin-top: 1em;
    padding-bottom: 1%;
 }
-.footer li > img {
+.footer img {
    vertical-align: middle;
    width: 6%;
 }
