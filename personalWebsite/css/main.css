@@ -19,7 +19,7 @@
    .footer li > img {
       width: 4% !important;
    }
-   .headerLogo {
+   .headerIcon {
       height: 21vw !important;
    }
    .tableStyle1 td, .tableStyle1 th {
@@ -46,7 +46,7 @@
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
    }
-   .linkLogo {
+   .linkIcon {
       width: 55% !important;
    }
    .centerColumn {
@@ -85,7 +85,7 @@
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
    }
-   .linkLogo {
+   .linkIcon {
       width: 50% !important;
    }
    /*Gaming fixes*/
@@ -126,7 +126,7 @@
       font-size: 50% !important;
       border: 1px solid black !important;
    }
-   .linkLogo {
+   .linkIcon {
       width: 52% !important;
    }
    /*Gaming fixes*/
@@ -176,7 +176,7 @@
       font-size: 50% !important;
       border: 1px solid black !important;
    }
-   .linkLogo {
+   .linkIcon {
       width: 95% !important;
    }
    /*Gaming fixes*/
@@ -226,7 +226,7 @@ header::after {
    display: table;
    clear: both;
 }
-.logo {
+.myLogo {
    height: 55px;
    float: left;
 }
@@ -382,17 +382,17 @@ nav a:hover::before {
    flex-basis: 20%;
    flex-shrink: 100;
 }
-.headerLogo {
+.headerIcon {
    vertical-align: middle;
    height: 27vw;
 }
-.linkLogo {
+.linkIcon {
    width: 35%;
    border: 3px solid var(--offWhite);
    border-radius: 15px;
    padding: 6px;
 }
-.linkLogo:hover {
+.linkIcon:hover {
    border: 3px solid var(--dark);
    border-radius: 15px;
    transition: all ease-in-out 300ms;
@@ -515,12 +515,6 @@ nav a:hover::before {
 * {
    box-sizing: border-box;
  }
- /*
- .header {
-   text-align: center;
-   padding: 32px;
- }
- */
  
  .picFlow {
    display: flex;
