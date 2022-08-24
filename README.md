@@ -1,4 +1,4 @@
-# personalWebsite
+# My Personal Website 
 This website id deployed at www.johnfoxweb.com
 
 This repository is where I develop and deploy my personal website. The websites acts as a project portfolio, online resume, and hub for all web based stuff I make. 
