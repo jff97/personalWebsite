@@ -1,0 +1,43 @@
+#us-map{
+  display: block;
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+}
+path:hover, circle:hover {
+  stroke: var(--bright) !important;
+  stroke-width:4px;
+  stroke-linejoin: round;
+  fill: var(--bright) !important;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: var(--offWhite);
+  border: 4px solid var(--bright);
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+}
+
+
+/*my additions*/
+#mapContainer {
+  background-color: var(--dark);
+}
+/*Fill this in when you add a new state
+This is the list of visited states*/
+#WI, #MN , #IL, #SD, #IN, #KY, #TN, #GA, #FL, #IA {
+  fill: var(--brightContrast) !important;
+}
