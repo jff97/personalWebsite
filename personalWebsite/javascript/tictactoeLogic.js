@@ -83,9 +83,9 @@ function getPlayerPiece() {
    let playerPiece = document.createElement("img");
    playerPiece.id = "playerPiece";
    if (tictactoe.turn == 0) {
-      playerPiece.src = "../assets/tictactoe/circle.png";
+      playerPiece.src = "../../assets/tictactoe/circle.png";
    } else {
-      playerPiece.src = "../assets/tictactoe/x.png";
+      playerPiece.src = "../../assets/tictactoe/x.png";
    }
    return playerPiece;
 }
@@ -282,12 +282,12 @@ function insertImage(curSpace, player) {
    let img = document.createElement('img');
    
    if (player == 0) {
-      img.src = '../assets/tictactoe/circle.png';
-      img.alt = 'bold circle';
+      img.src = "../../assets/tictactoe/circle.png";
+      img.alt = "bold circle";
    }
    if (player == 1) {
-      img.src = '../assets/tictactoe/x.png';
-      img.alt = 'bold x';
+      img.src = "../../assets/tictactoe/x.png";
+      img.alt = "bold x";
    }
    img.className = 'playerMark';
    curSpace.appendChild(img);
