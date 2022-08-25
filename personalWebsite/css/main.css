@@ -118,8 +118,13 @@
       width: 52% !important;
    }
    .footer img {
-      width: 15% !important;
+      width: 14% !important;
    }
+   .footer {
+      font-size: 95% !important;
+      padding-left: 4% !important;
+   }
+
    /*Home Fixes*/
    #gradCountdown {
       font-size: 90% !important;
@@ -447,7 +452,7 @@ nav a:hover::before {
    color: var(--offWhite);
    font-family: 'Courier New', Courier, monospace;
    font-size: 110%;
-   padding-left: 8%;
+   padding-left: 7%;
    margin-top: 1em;
    padding-bottom: 1%;
 }
