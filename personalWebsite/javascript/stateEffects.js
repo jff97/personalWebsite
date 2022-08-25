@@ -1,3 +1,4 @@
+
 $("path, circle").hover(
   function(e) {
     $('#info-box').css('display','block');
@@ -37,7 +38,7 @@ $("path, circle").click(
       }
     }
   }
-)
+);
 //Edit the visited list when you add a new state page
 let visitedList = ["WI", "MN" ,"IL", "SD", "IN", "KY", "TN", "GA", "FL", "IA"];
 

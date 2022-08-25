@@ -1,4 +1,5 @@
-//this code is mostly from a youtube tutorial
+//this code is mostly from a youtube tutorial at https://www.youtube.com/watch?v=Zr2kBYzcJ14 
+
 dayjs.extend(dayjs_plugin_duration);
 
 
