@@ -20,20 +20,14 @@
       width: 4% !important;
    }
    .headerIcon {
-      height: 21vw !important;
-   }
-   .tableStyle1 td, .tableStyle1 th {
-      font-size: 80% !important;
+      height: 15vw !important;
    }
    /*Travel fixes*/
    #us-map{
       left: 20% !important;
       width: 60% !important;
    }
-   /*Gaming fixes*/
-   .gamePics {
-      width: 70% !important;
-   }
+   
    /*TicTacToe fixes*/
    #gameContainer {
       padding-bottom: 79% !important;
@@ -53,9 +47,6 @@
       font-size: 75% !important;
    }
    /*Gaming fixes*/
-   .gamePics {
-      width: 90% !important;
-   }
    /*Academic Fixes*/
    /*professional fixes*/
    /*Travel fixes*/
@@ -65,7 +56,7 @@
    }
    /*TicTacToe fixes*/
    #gameContainer {
-      padding-bottom: 85% !important;
+      padding-bottom: 92% !important;
    }
    
 }
@@ -83,14 +74,13 @@
       font-size: 90%;
    }
    .tableStyle1 td, .tableStyle1 th {
-      font-size: 70% !important;
+      font-size: 87% !important;
    }
    .linkIcon {
       width: 50% !important;
    }
-   /*Gaming fixes*/
-   .gamePics {
-      width: 60% !important;
+   .footer img {
+      width: 14% !important;
    }
    /*Academic Fixes*/
    /*Professional fixes*/
@@ -100,14 +90,11 @@
    #gameContainer {
       width: 80%  !important;
       margin-left: 10% !important;
-      padding-bottom: 100% !important;
+      padding-bottom: 110% !important;
    }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
    /*Universal Fixes*/
-   .centerColumn {
-      border: 18px solid var(--bright) !important;
-   }
    .topHeader {
       font-size: 270% !important;
    }
@@ -115,15 +102,16 @@
       display: none !important;
    }
    .centerColumn {
-      margin-right: 3%;
-      margin-left: 3%;
+      margin-right: 3% !important;
+      margin-left: 3% !important;
       font-size: 80% !important;
+      border: 3vw solid var(--bright) !important;
    }
    .quicklinks li {
       font-size: 90% !important;
    }
    .tableStyle1 td, .tableStyle1 th {
-      font-size: 50% !important;
+      font-size: 87% !important;
       border: 1px solid black !important;
    }
    .linkIcon {
@@ -137,11 +125,11 @@
       font-size: 90% !important;
    }
    /*Gaming fixes*/
-   .gamePics {
-      width: 60% !important;
-   }
    /*Academic Fixes*/
    /*professional fixes*/
+   .resume {
+      display: none;
+   }
    .picLinks {
       width: 75% !important;
       margin-left: 12.5% !important;
@@ -154,7 +142,8 @@
    #gameContainer {
       width: 85%  !important;
       margin-left: 7.5% !important;
-      padding-bottom: 110% !important;
+      padding-bottom: 130% !important;
+      font-size: 90%  !important;
    }
 }
 @media only screen and (min-width: 0px) and (max-width: 320px) {
@@ -180,7 +169,7 @@
       font-size: 90% !important;
    }
    .tableStyle1 td, .tableStyle1 th {
-      font-size: 50% !important;
+      font-size: 90% !important;
       border: 1px solid black !important;
    }
    .linkIcon {
@@ -190,9 +179,6 @@
       width: 15% !important;
    }
    /*Gaming fixes*/
-   .gamePics {
-      width: 60% !important;
-   }
    /*Academic Fixes*/
    /*professional fixes*/
    .picLinks {
@@ -210,7 +196,8 @@
    #gameContainer {
       width: 84%  !important;
       margin-left: 8% !important;
-      padding-bottom: 120% !important;
+      padding-bottom: 125% !important;
+      font-size: 90% !important;
    }
 }
 body > * {
@@ -326,9 +313,16 @@ nav a:hover::before {
    border: 2px solid var(--dark);
    padding-top: 10px;
    padding-bottom: 10px;
-   padding-left: 3px;
-   padding-right: 3px;
+   padding-left: .9%;
+   padding-right: .9%;
    text-align: center;
+}
+.gamePics {
+   width: 100%;
+}
+.gameLogoCol {
+   width: 25%;
+   min-width: 38px;
 }
 .topDescription {
    color: var(--dark);
@@ -339,9 +333,6 @@ nav a:hover::before {
 .orderedList1 {
    border-top: 40px solid var(--offWhite);
    margin-top: 0px;
-}
-.gamePics {
-   width: 200px;
 }
 #test {
    width: 20%;
@@ -368,7 +359,7 @@ nav a:hover::before {
 .centerColumn {
    width: 60%;
    background-color: var(--brightContrast);
-   border: 30px solid var(--bright);
+   border: 3.8vw solid var(--bright);
    border-radius: 20px;
    color: var(--dark);
    padding: .5%;
@@ -394,7 +385,7 @@ nav a:hover::before {
 }
 .headerIcon {
    vertical-align: middle;
-   height: 27vw;
+   height: 24vw;
 }
 .linkIcon {
    width: 35%;
