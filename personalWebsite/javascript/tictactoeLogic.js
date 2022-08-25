@@ -341,38 +341,58 @@ function checkWin(xCoord, yCoord) {
    }
    return typeStatus;
 }
-function displayGameOver(x, y, winStatus, type) {
-   
+
+/**
+ * Displays different game over content in a box dedicated for the end of game display
+ * It can display game over player x wins 
+ * or it can display game over game was a draw
+ * @param {number} x 
+ * @param {number} y 
+ * @param {Array} winStatus 
+ * @param {string} type 
+ */
+function displayGameOver(xCoord, yCoord, winStatus, type) {
+   //make the element to put the content into
    let gameOverBox = document.createElement("div");
-   let playerNumber = tictactoe.turn + 1;
+   //this if else determines what type of game end it was and puts different content in the game over box
    if (type === "draw") {
       gameOverBox.innerHTML = "Game was a draw";
    } else {
+      let playerNumber = tictactoe.turn + 1;
       gameOverBox.innerHTML = "Game Over Player " + playerNumber + " wins";
    }
    gameOverBox.id = 'gameOver';
    let gameOverContainer = document.getElementById("gameOverContainer");
+
+   //put the game over box in the div responsible for positioning it
    gameOverContainer.appendChild(gameOverBox);
 
-   
+   //check to see if a win happened on a row
+   //if a win happened on a row put a dash in that row
    if (winStatus[1]) {
       //then a win on row x happened
       let dash = document.createElement("div");
       dash.className = "dash";
       dash.id = "row";
-      const curID = x + "," + "0";
+      const curID = xCoord + "," + "0";
       const curSpace = document.getElementById(curID);
       curSpace.appendChild(dash);
    }
+
+   //check to see if a win happened on a column
+   //if a win happened on a row put a dash in that column
    if (winStatus[2]) {
       //then a win on column y happened
       let dash = document.createElement("div");
       dash.className = "dash";
       dash.id = "col";
-      const curID = "0" + "," + y;
+      const curID = "0" + "," + yCoord;
       const curSpace = document.getElementById(curID);
       curSpace.appendChild(dash);
    }
+
+   //check to see if a win happened on the off diagonal
+   //if a win happened on a row put a dash in the off diagonal
    if (winStatus[3]) {
       //then a win on off diagonal happened
       let dash = document.createElement("div");
@@ -382,6 +402,9 @@ function displayGameOver(x, y, winStatus, type) {
       const curSpace = document.getElementById(curID);
       curSpace.appendChild(dash);
    }
+
+   //check to see if a win happened in the main diagonal
+   //if a win happened on a row put a dash in the off diagonal
    if (winStatus[4]) {
       //then a win on main diagonal happened
       let dash = document.createElement("div");
@@ -392,22 +415,38 @@ function displayGameOver(x, y, winStatus, type) {
       curSpace.appendChild(dash);
    }
 }
+
+/**
+ * This function inserts a player piece image as a child in the element it was passed in
+ * @param {Element} curSpace the space div that represents where to put the player piece image
+ */
 function insertImage(curSpace) {
+   //create a new image element
    let img = document.createElement('img');
    
+   //this if else determines which picture to put in by looking at the global game variables turn value
    if (tictactoe.turn == 0) {
       img.src = "../../assets/tictactoe/circle.png";
       img.alt = "bold circle";
-   }
-   if (tictactoe.turn == 1) {
+   } else if (tictactoe.turn == 1) {
       img.src = "../../assets/tictactoe/x.png";
       img.alt = "bold x";
    }
    img.className = 'playerMark';
+
+   //insert the player piece image into the space
    curSpace.appendChild(img);
 }
 
+/**
+ * a object representing an entire tic tac toe game
+ * This needs to be instantiated as a global variable in order for all the functions to work correcly
+ */
 class Game {
+   /**
+    * Create a game object
+    * @param {number} b the width and height of a square tic tac toe board
+    */
    constructor(b) {
       this.boardSize = b;
       this.turn = 0;
@@ -426,13 +465,24 @@ class Game {
       this.grid = g;
    }
 }
+
+/**
+ * slots go in the grid var of a game object
+ * Slots 
+ */
 class Slot {
+   /**
+    * creates a slot for the grid with player placement information in it
+    */
    constructor() {
+      //full is a shortcut boolean var that saves us having to look at the array all the time
       this.full = false;
-      let p = new Array(2);
-      p[0] = false;
-      p[1] = false; 
-      this.hasPlayersMark = p;
+      //the hasPlayersMark array stores whether a player has put a piece in this slot
+      //0th slot represents player 1
+      //1st slot represents player 2
+      this.hasPlayersMark = new Array(2);
+      this.hasPlayersMark[0] = false;
+      this.hasPlayersMark[1] = false; 
    }
 }
 
