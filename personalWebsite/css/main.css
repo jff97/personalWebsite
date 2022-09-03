@@ -354,6 +354,12 @@ nav a:hover::before {
 .outsidelinks:hover {
    color: lightgrey;
 }
+.gameLink {
+   color: var(--dark);
+}
+.gameLink:hover {
+   color: var(--offWhite);
+}
 .quicklinks li {
    margin-top: 10px;
 }
