@@ -32,6 +32,9 @@
    #gameContainer {
       padding-bottom: 79% !important;
    }
+   #ticTacToeSvg {
+      width: 30% !important;
+   }
 }
 
 /*Screens between 900 and 1094 px*/
@@ -318,10 +321,10 @@ nav a:hover::before {
    border: 2px solid var(--dark);
    padding-top: 10px;
    padding-bottom: 10px;
-   padding-left: .9%;
-   padding-right: .9%;
    text-align: center;
 }
+
+
 .gamePics {
    width: 100%;
 }
@@ -368,6 +371,13 @@ nav a:hover::before {
    width: 10%;
    vertical-align: middle;
    fill: inherit;
+}
+#ticTacToeSvg {
+   width: 40%;
+   fill: var(--dark) !important;
+}
+#ticTacToeSvg:hover {
+   fill: var(--bright) !important;
 }
 .quicklinks li {
    margin-top: 10px;
