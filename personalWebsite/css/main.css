@@ -354,11 +354,20 @@ nav a:hover::before {
 .outsidelinks:hover {
    color: lightgrey;
 }
-.gameLink {
+.textLink {
    color: var(--dark);
+   fill: var(--dark);
+   text-decoration: none;
+   white-space: nowrap;
 }
-.gameLink:hover {
+.textLink:hover {
    color: var(--offWhite);
+   fill: var(--offWhite) !important;
+}
+.textLink svg {
+   width: 10%;
+   vertical-align: middle;
+   fill: inherit;
 }
 .quicklinks li {
    margin-top: 10px;
