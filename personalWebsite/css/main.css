@@ -1,3 +1,15 @@
+/*fontawesome icon styling here*/
+.headerIcon {
+   vertical-align: middle;
+   font-size: 17vw;
+   color: black;
+}
+.navIcon {
+   margin-right: 5px;
+   vertical-align: middle;
+   font-size: 230%;
+   color: black;
+}
 /*Global CSS Variables*/
 :root {
    /*Old Colors
@@ -18,9 +30,6 @@
    /*Universal Fixes*/
    .footer li > img {
       width: 4% !important;
-   }
-   .headerIcon {
-      height: 15vw !important;
    }
    /*Travel fixes*/
    #us-map{
@@ -64,6 +73,10 @@
    
 }
 @media only screen and (min-width: 550px) and (max-width: 750px) {
+   /*fontawesome Icon Fixes*/
+   .headerIcon {
+      font-size: 24vw;
+   }
    /*Universal Fixes*/
    .leftOfMain, .rightOfMain {
       display: none !important;
@@ -97,6 +110,10 @@
    }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
+   /*fontawesome Icon Fixes*/
+   .headerIcon {
+      font-size: 24vw;
+   }
    /*Universal Fixes*/
    .topHeader {
       font-size: 270% !important;
@@ -238,11 +255,6 @@ header::after {
 nav {
    float: right;
 }
-nav img {
-   height: 25px;
-   margin-right: 5px;
-   vertical-align: middle;
-}
 nav ul {
    margin: 0;
    padding: 0;
@@ -260,6 +272,7 @@ nav a {
    text-decoration: none;
    text-transform: uppercase;
    font-size: 14px;
+   white-space: nowrap;
 }
 nav a:hover {
    color: lightgray;
@@ -411,10 +424,6 @@ nav a:hover::before {
    height: 100%;   
    flex-basis: 20%;
    flex-shrink: 100;
-}
-.headerIcon {
-   vertical-align: middle;
-   height: 24vw;
 }
 .linkIcon {
    width: 35%;
