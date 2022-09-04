@@ -10,6 +10,14 @@
    font-size: 230%;
    color: black;
 }
+.footerIcon {
+   vertical-align: middle;
+   font-size: 7.1vw;
+   color: var(--brightContrast);
+}
+.gradCounterIcon {
+   font-size: 6vw;
+}
 /*Global CSS Variables*/
 :root {
    /*Old Colors
@@ -28,8 +36,8 @@
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
    /*Universal Fixes*/
-   .footer li > img {
-      width: 4% !important;
+   .footerIcon {
+      font-size: 5.2vw !important;
    }
    /*Travel fixes*/
    #us-map{
@@ -49,6 +57,7 @@
 /*Screens between 900 and 1094 px*/
 @media only screen and (min-width: 750px) and (max-width: 1094px) {
    /*Universal Fixes*/
+   
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
    }
@@ -95,9 +104,6 @@
    .linkIcon {
       width: 50% !important;
    }
-   .footer img {
-      width: 14% !important;
-   }
    /*Academic Fixes*/
    /*Professional fixes*/
    /*Travel fixes*/
@@ -137,9 +143,6 @@
    .linkIcon {
       width: 52% !important;
    }
-   .footer img {
-      width: 14% !important;
-   }
    .footer {
       font-size: 95% !important;
       padding-left: 4% !important;
@@ -159,7 +162,7 @@
       width: 75% !important;
       margin-left: 12.5% !important;
       margin-right: 12.5% !important;
-      font-size: 80% !important;
+      font-size: 100% !important;
    }
    /*Travel fixes*/
 
@@ -199,9 +202,6 @@
    }
    .linkIcon {
       width: 95% !important;
-   }
-   .footer img {
-      width: 15% !important;
    }
    /*Gaming fixes*/
    /*Academic Fixes*/
@@ -379,10 +379,9 @@ nav a:hover::before {
    color: var(--offWhite);
    fill: var(--offWhite) !important;
 }
-.textLink svg {
-   width: 10%;
+.textLink i {
+   font-size: 135%;
    vertical-align: middle;
-   fill: inherit;
 }
 #ticTacToeSvg {
    width: 40%;
@@ -464,9 +463,10 @@ nav a:hover::before {
    margin-bottom: 9%;
 }
 .buttonPicture {
-   width: 1.1em;
+   font-size: 1.2em;
    vertical-align: middle;
-   margin-right: 4px;
+   margin-right: .5%;
+   color: var(--offWhite);
 }
 
 .downloadButton {
@@ -489,13 +489,12 @@ nav a:hover::before {
    margin-top: 1em;
    padding-bottom: 1%;
 }
-.footer img {
-   vertical-align: middle;
-   width: 9%;
-}
 .footer > ul {
    list-style: none;
    text-align: left;
+}
+.footer li {
+   margin-bottom: 1%;
 }
 .until, .quicklinks {
    border-radius: 25px;
@@ -508,7 +507,7 @@ nav a:hover::before {
    gap: 3%;
    padding: 5%;
    padding-bottom: 14%;
-   /*Margin determines the size of the grad display*/
+   /*Margin determines the size of the grid display*/
    margin-left: 15%;
    margin-right: 15%;
    margin-top: 3%;
