@@ -56,10 +56,10 @@
    205375
    EFEFEF
    */
-   --dark: #002E4D;
-   --brightContrast: #F66B0E;
-   --bright: #0065A8;
-   --offWhite: #EFEFEF;
+   --dark:#002E4D;
+   --brightContrast:#F66B0E;
+   --bright:#0065A8;
+   --offWhite:#EFEFEF;
 }
 
 /*Breakpoints*/
