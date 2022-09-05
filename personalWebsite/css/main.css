@@ -1,3 +1,29 @@
+/*styles for the theme changer*/
+#themeContainer {
+   /*Optional Styling below*/
+   background-color: darkmagenta;
+}
+.radioContainer {
+   display: inline-block;
+   /*Optional Styling below*/
+   background-color: red;
+}
+
+.colorInput * {
+   display: block;
+   /*Optional Styling below*/
+}
+.colorInput {
+   display: inline-block;
+   /*Optional Styling below*/
+   background-color: darkgray;
+   margin: 4px;
+}
+#colorInputContainer {
+   /*Optional Styling below*/
+   border: 2px solid black;
+   margin: 4px;
+}
 /*fontawesome icon styling here*/
 .headerIcon {
    vertical-align: middle;
