@@ -18,6 +18,10 @@
 .gradCounterIcon {
    font-size: 6vw;
 }
+.travelInfoIcon {
+   font-size: 320%;
+   vertical-align: middle;
+}
 /*Global CSS Variables*/
 :root {
    /*Old Colors
@@ -588,10 +592,6 @@ nav a:hover::before {
    }
  }
 /*End the flexbox styling from class*/
-.galleryIcon {
-   width: 15%;
-   vertical-align: middle;
-}
 .galleryList {
    padding: 0;
    list-style-position: inside;
