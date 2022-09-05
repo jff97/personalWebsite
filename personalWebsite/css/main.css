@@ -1,8 +1,6 @@
 /*Global CSS Variables*/
 :root {
-   /*
-   --dark:#002E4D;
-   */
+   /*--dark:#002E4D;*/
    --dark:#002640;
    --brightContrast:#F66B0E;
    --bright:#0065A8;
@@ -11,16 +9,21 @@
 /*styles for the theme changer*/
 #themeContainer {
    /*Optional Styling below*/
-   background-color: darkmagenta;
+   background-color: var(--dark);
    font-size: 4vw;
+   border: 3vw solid black;
+   padding: 2%;
 }
 .radioContainer {
    display: inline-block;
    /*Optional Styling below*/
-   background-color: red;
+   background-color: lightgray;
    text-align: center;
    flex-basis: 25%;
    white-space: nowrap;
+   border-radius: 1.5vw;
+   margin-right: 2%;
+   margin-left: 2%;
 }
 .radioContainer input {
    margin-top: 1.5em;
@@ -30,6 +33,7 @@
 #formInputs {
    display: flex;
    justify-content: center;
+   margin-top: 2%;
 }
 
 .colorInput * {
@@ -39,11 +43,14 @@
 .colorInput {
    display: inline-block;
    /*Optional Styling below*/
-   background-color: darkgray;
+   background-color: lightgray;
    text-align: center;
-   flex-basis: 24%;
+   flex-basis: 23%;
    padding-top: 2%;
    padding-bottom: 1%;
+   margin: 1%;
+   border-radius: 1.5vw;
+   margin-top: 2%;
 }
 .colorInput input {
    width: 90%;
@@ -168,6 +175,10 @@
    .headerIcon {
       font-size: 24vw;
    }
+   .radioContainer input {
+      margin-bottom: 1.3em;
+      transform: scale(2.8);
+   }
    /*Universal Fixes*/
    #themeContainer {
       font-size: 5.5vw !important;
@@ -226,6 +237,14 @@
    }
 }
 @media only screen and (min-width: 0px) and (max-width: 320px) {
+   /*fontawesome Icon Fixes*/
+   .headerIcon {
+      font-size: 24vw;
+   }
+   .radioContainer input {
+      margin-bottom: 1.3em;
+      transform: scale(2.8);
+   }
    /*Universal Fixes*/
    #themeContainer {
       font-size: 5vw !important;

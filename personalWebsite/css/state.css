@@ -26,6 +26,7 @@ path:hover, circle:hover {
   z-index: 1;
   background-color: var(--offWhite);
   border: 4px solid var(--bright);
+  color: var(--dark);
   border-radius: 5px;
   padding: 5px;
   font-family: arial;
