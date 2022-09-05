@@ -537,9 +537,6 @@ nav a:hover::before {
    text-align: center;
    margin-bottom: 1%;
 }
-#gradCountImg {
-   width: 100%;
-}
 .until__numeric {
    font-weight: bold;
    font-size: larger;
