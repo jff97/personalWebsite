@@ -42,12 +42,12 @@
 			</nav>
 		</div>
 	</header>
-  <div class="header">
-    <h1 class="topHeader">
-      <i class="fa-solid fa-car-side headerIcon"></i> Georgia
-    </h1>
-    
-    <div class="flexContainer">
+   <div class="header">
+      <h1 class="topHeader">
+         <i class="fa-solid fa-car-side headerIcon"></i> Georgia
+      </h1>
+   </div> 
+   <div class="flexContainer">
       <div class="leftOfMain"><br></div>
       <div class="centerColumn">
          Resize browser window to see responsive effect on the gallery
@@ -67,55 +67,90 @@
          </div>
       </div>
       <div class="rightOfMain"><br></div>
-  </div>
+   </div>
   
-  <!-- Photo Grid -->
-  <div class="picFlow"> 
-   <img src="../../assets/states/georgia/ellie/IMG_8111.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8120.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8121.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8122.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8124.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8129.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8134.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/ellie/IMG_8137.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_140406.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_141630.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_142114.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_152213.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_154609.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_155353.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_160756.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_161022.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_161326.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_162304.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_163245.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220708_165336.jpg" alt="Georgia travel picture">
-   <img src="../../assets/states/georgia/20220712_163023.jpg" alt="Georgia travel picture">
-  </div>
-  <div class="footer">
-   <br>
-   <i class="fa-solid fa-scale-balanced footerIcon"></i> 
-   Licensed Under a 
-   <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">
-      MIT License
-   </a><br>
-   <br>
-   <b>Contact Info</b>
-   <ul>
-      <li>
-         <i class="fa-solid fa-phone footerIcon"></i>
-         jicfox7@gmail.com
-      </li>
-      <li>
-         <i class="fa-solid fa-envelope footerIcon"></i>
-         (715)-523-1588
-      </li>
-      <li>
-         <i class="fa-solid fa-location-dot footerIcon"></i>
-         La Crosse WI 54601
-      </li>
-   </ul>
-</div>
+   <!-- Photo Grid -->
+   <div class="picFlow"> 
+      <img src="../../assets/states/georgia/ellie/IMG_8111.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8120.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8121.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8122.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8124.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8129.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8134.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/ellie/IMG_8137.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_140406.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_141630.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_142114.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_152213.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_154609.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_155353.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_160756.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_161022.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_161326.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_162304.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_163245.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220708_165336.jpg" alt="Georgia travel picture">
+      <img src="../../assets/states/georgia/20220712_163023.jpg" alt="Georgia travel picture">
+   </div>
+   <div id="themeContainer">
+      <div id="formInputs">
+         <div class="radioContainer">
+            <label for="default1">Default 1</label><br>
+            <input type="radio" id="default1" name="theme" onclick="radioClick('default1')">
+         </div>
+         <div class="radioContainer">
+            <label for="default2">Default 2</label><br>
+            <input type="radio" id="default2" name="theme" onclick="radioClick('default2')">
+         </div>
+         <div class="radioContainer">
+            <label for="customTheme">Custom</label><br>
+            <input type="radio" id="customTheme" name="theme" onclick="radioClick('customTheme')">
+         </div>
+      </div>
+      <div id="colorInputContainer">
+         <div class="colorInput">
+            <label for="clrInput1">Color 1</label>
+            <input type="color" name="clrInput1" id="clrInput1" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput2">Color 2</label>
+            <input type="color" name="clrInput2" id="clrInput2" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput3">Color 3</label>
+            <input type="color" name="clrInput3" id="clrInput3" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput4">Color 4</label>
+            <input type="color" name="clrInput4" id="clrInput4" disabled onchange="applyCustomColors()">
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <br>
+      <i class="fa-solid fa-scale-balanced footerIcon"></i> 
+      Licensed Under a 
+      <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">
+         MIT License
+      </a><br>
+      <br>
+      <b>Contact Info</b>
+      <ul>
+         <li>
+            <i class="fa-solid fa-phone footerIcon"></i>
+            jicfox7@gmail.com
+         </li>
+         <li>
+            <i class="fa-solid fa-envelope footerIcon"></i>
+            (715)-523-1588
+         </li>
+         <li>
+            <i class="fa-solid fa-location-dot footerIcon"></i>
+            La Crosse WI 54601
+         </li>
+      </ul>
+   </div>
+   <script src="../../javascript/themeChanger.js"></script>
 </body>
 </html>
