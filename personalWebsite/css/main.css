@@ -1,26 +1,106 @@
 /*Global CSS Variables*/
 :root {
-   /*Old Colors
-   112B3C
-   F66B0E
-   205375
-   EFEFEF
-   */
-   --dark: #002E4D;
-   --brightContrast: #F66B0E;
-   --bright: #0065A8;
-   --offWhite: #EFEFEF;
+   /*--dark:#002E4D;*/
+   --dark:#002640;
+   --brightContrast:#F66B0E;
+   --bright:#0065A8;
+   --offWhite:#EFEFEF;
+}
+/*styles for the theme changer*/
+#themeContainer {
+   /*Optional Styling below*/
+   color: black;
+   font-size: 3vw;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-bottom: 7%;
+   border-radius: 7vw;
+   box-sizing: border-box;
+   animation: rainbowFade 1s linear infinite;
+}
+#themeSpacerBar {
+   display: block;
+   width: 100%;
+   height: 4vw;
+   background: black;
+}
+.radioContainer {
+   display: inline-block;
+   /*Optional Styling below*/
+   text-align: center;
+   flex-basis: 25%;
+   white-space: nowrap;
+   margin-right: 2%;
+   margin-left: 2%;
+}
+.radioContainer input {
+   margin-top: 1.4em;
+   margin-bottom: 2em;
+   transform: scale(3);
+}
+#formInputs {
+   display: flex;
+   justify-content: center;
+   padding-top: 2%;
+}
+
+.colorInput * {
+   display: block;
+   /*Optional Styling below*/
+}
+.colorInput {
+   display: inline-block;
+   /*Optional Styling below*/
+   text-align: center;
+   flex-basis: 23%;
+   padding-top: 2%;
+   padding-bottom: 1%;
+   margin: 3%;
+   border-radius: 1.5vw;
+   margin-top: 2%;
+}
+.colorInput input {
+   width: 90%;
+   margin-left: 5%;
+   height: 10vw;
+   border-radius: 4px;
+}
+#colorInputContainer {
+   /*Optional Styling below*/
+   display: flex;
+   justify-content: center;
+}
+/*fontawesome icon styling here*/
+.headerIcon {
+   vertical-align: middle;
+   font-size: 17vw;
+   color: var(--brightContrast);
+}
+.navIcon {
+   margin-right: 5px;
+   vertical-align: middle;
+   font-size: 230%;
+   color: var(--dark);
+}
+.footerIcon {
+   vertical-align: middle;
+   font-size: 7.1vw;
+   color: var(--brightContrast);
+}
+.gradCounterIcon {
+   font-size: 6vw;
+}
+.travelInfoIcon {
+   font-size: 320%;
+   vertical-align: middle;
 }
 
 /*Breakpoints*/
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
    /*Universal Fixes*/
-   .footer li > img {
-      width: 4% !important;
-   }
-   .headerIcon {
-      height: 15vw !important;
+   .footerIcon {
+      font-size: 5.2vw !important;
    }
    /*Travel fixes*/
    #us-map{
@@ -32,11 +112,15 @@
    #gameContainer {
       padding-bottom: 79% !important;
    }
+   #ticTacToeSvg {
+      width: 30% !important;
+   }
 }
 
 /*Screens between 900 and 1094 px*/
 @media only screen and (min-width: 750px) and (max-width: 1094px) {
    /*Universal Fixes*/
+   
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
    }
@@ -61,6 +145,10 @@
    
 }
 @media only screen and (min-width: 550px) and (max-width: 750px) {
+   /*fontawesome Icon Fixes*/
+   .headerIcon {
+      font-size: 24vw;
+   }
    /*Universal Fixes*/
    .leftOfMain, .rightOfMain {
       display: none !important;
@@ -79,9 +167,6 @@
    .linkIcon {
       width: 50% !important;
    }
-   .footer img {
-      width: 14% !important;
-   }
    /*Academic Fixes*/
    /*Professional fixes*/
    /*Travel fixes*/
@@ -94,7 +179,19 @@
    }
 }
 @media only screen and (min-width: 320px) and (max-width: 550px) {
+   /*fontawesome Icon Fixes*/
+   .headerIcon {
+      font-size: 24vw;
+   }
+   .radioContainer input {
+      margin-top: 1em;
+      margin-bottom: 1.3em;
+      transform: scale(2.2);
+   }
    /*Universal Fixes*/
+   #themeContainer {
+      font-size: 5.2vw !important;
+   }
    .topHeader {
       font-size: 270% !important;
    }
@@ -117,9 +214,6 @@
    .linkIcon {
       width: 52% !important;
    }
-   .footer img {
-      width: 14% !important;
-   }
    .footer {
       font-size: 95% !important;
       padding-left: 4% !important;
@@ -139,7 +233,7 @@
       width: 75% !important;
       margin-left: 12.5% !important;
       margin-right: 12.5% !important;
-      font-size: 80% !important;
+      font-size: 100% !important;
    }
    /*Travel fixes*/
 
@@ -152,7 +246,19 @@
    }
 }
 @media only screen and (min-width: 0px) and (max-width: 320px) {
+   /*fontawesome Icon Fixes*/
+   .headerIcon {
+      font-size: 24vw;
+   }
+   .radioContainer input {
+      margin-top: .9em;
+      margin-bottom: 1em;
+      transform: scale(1.9);
+   }
    /*Universal Fixes*/
+   #themeContainer {
+      font-size: 5vw !important;
+   }
    .centerColumn {
       border: 12px solid var(--bright) !important;
       font-size: 60% !important;
@@ -179,9 +285,6 @@
    }
    .linkIcon {
       width: 95% !important;
-   }
-   .footer img {
-      width: 15% !important;
    }
    /*Gaming fixes*/
    /*Academic Fixes*/
@@ -235,11 +338,6 @@ header::after {
 nav {
    float: right;
 }
-nav img {
-   height: 25px;
-   margin-right: 5px;
-   vertical-align: middle;
-}
 nav ul {
    margin: 0;
    padding: 0;
@@ -257,6 +355,7 @@ nav a {
    text-decoration: none;
    text-transform: uppercase;
    font-size: 14px;
+   white-space: nowrap;
 }
 nav a:hover {
    color: lightgray;
@@ -310,6 +409,50 @@ nav a:hover::before {
       transform: translateX(0%);
    }
 }
+@keyframes rainbowFade {
+   0% {
+      background-image: linear-gradient(to left, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000, yellow,#FFD200, orange, #FF5300, red);
+   }
+   7.692% {
+      background-image: linear-gradient(to left,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000, yellow,#FFD200, orange, #FF5300);
+   }
+   15.385% {
+      background-image: linear-gradient(to left, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000, yellow,#FFD200, orange);
+   }
+   23.077% {
+      background-image: linear-gradient(to left,  orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000, yellow,#FFD200);
+   }
+   30.769% {
+      background-image: linear-gradient(to left, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000, yellow);
+   }
+   38.461% {
+      background-image: linear-gradient(to left,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000);
+   }
+   46.153% {
+      background-image: linear-gradient(to left, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080, green);
+   }
+   53.846% {
+      background-image: linear-gradient(to left,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue, #004080);
+   }
+   61.538% {
+      background-image: linear-gradient(to left,  #004080,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1, blue);
+   }
+   69.230% {
+      background-image: linear-gradient(to left, blue,  #004080,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo, #2600C1);
+   }
+   76.923% {
+      background-image: linear-gradient(to left,  #2600C1, blue,  #004080,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8, indigo);
+   }
+   84.6153% {
+      background-image: linear-gradient(to left,  indigo,  #2600C1, blue,  #004080,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet, #9D41B8);
+   }
+   92.307% {
+      background-image: linear-gradient(to left,  #9D41B8,  indigo,  #2600C1, blue,  #004080,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red, violet);
+   }
+   100% {
+      background-image: linear-gradient(to left,  violet,  #9D41B8,  indigo,  #2600C1, blue,  #004080,  green, #80C000,  yellow, #FFD200, orange, #FF5300,  red);
+   }
+}
 .tableStyle1 {
    padding: 1.2%;
    width: 100%;
@@ -318,10 +461,9 @@ nav a:hover::before {
    border: 2px solid var(--dark);
    padding-top: 10px;
    padding-bottom: 10px;
-   padding-left: .9%;
-   padding-right: .9%;
    text-align: center;
 }
+
 .gamePics {
    width: 100%;
 }
@@ -354,6 +496,27 @@ nav a:hover::before {
 .outsidelinks:hover {
    color: lightgrey;
 }
+.textLink {
+   color: var(--dark);
+   fill: var(--dark);
+   text-decoration: none;
+   white-space: nowrap;
+}
+.textLink:hover {
+   color: var(--offWhite);
+   fill: var(--offWhite) !important;
+}
+.textLink i {
+   font-size: 135%;
+   vertical-align: middle;
+}
+#ticTacToeSvg {
+   width: 40%;
+   fill: var(--dark) !important;
+}
+#ticTacToeSvg:hover {
+   fill: var(--bright) !important;
+}
 .quicklinks li {
    margin-top: 10px;
 }
@@ -373,7 +536,7 @@ nav a:hover::before {
    flex-basis: 60%;
    height: 100%;
    flex-shrink: 1;
-   margin-bottom: 100px;
+   margin-bottom: 5vh;
 }
 
 .centerColumn > h1, .centerColumn > h2 {
@@ -387,10 +550,6 @@ nav a:hover::before {
    height: 100%;   
    flex-basis: 20%;
    flex-shrink: 100;
-}
-.headerIcon {
-   vertical-align: middle;
-   height: 24vw;
 }
 .linkIcon {
    width: 35%;
@@ -431,9 +590,10 @@ nav a:hover::before {
    margin-bottom: 9%;
 }
 .buttonPicture {
-   width: 1.1em;
+   font-size: 1.2em;
    vertical-align: middle;
-   margin-right: 4px;
+   margin-right: .5%;
+   color: var(--offWhite);
 }
 
 .downloadButton {
@@ -453,16 +613,14 @@ nav a:hover::before {
    font-family: 'Courier New', Courier, monospace;
    font-size: 110%;
    padding-left: 7%;
-   margin-top: 1em;
    padding-bottom: 1%;
-}
-.footer img {
-   vertical-align: middle;
-   width: 9%;
 }
 .footer > ul {
    list-style: none;
    text-align: left;
+}
+.footer li {
+   margin-bottom: 1%;
 }
 .until, .quicklinks {
    border-radius: 25px;
@@ -475,7 +633,7 @@ nav a:hover::before {
    gap: 3%;
    padding: 5%;
    padding-bottom: 14%;
-   /*Margin determines the size of the grad display*/
+   /*Margin determines the size of the grid display*/
    margin-left: 15%;
    margin-right: 15%;
    margin-top: 3%;
@@ -501,9 +659,6 @@ nav a:hover::before {
    text-align: center;
    margin-bottom: 1%;
 }
-#gradCountImg {
-   width: 100%;
-}
 .until__numeric {
    font-weight: bold;
    font-size: larger;
@@ -527,6 +682,7 @@ nav a:hover::before {
    display: flex;
    flex-wrap: wrap;
    padding: 0 4px;
+   margin-bottom: 5vh;
  }
  
  /* Create four equal columns that sits next to each other */
@@ -556,10 +712,6 @@ nav a:hover::before {
    }
  }
 /*End the flexbox styling from class*/
-.galleryIcon {
-   width: 15%;
-   vertical-align: middle;
-}
 .galleryList {
    padding: 0;
    list-style-position: inside;

@@ -8,41 +8,42 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Games | Fox</title>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script src="https://kit.fontawesome.com/70c0cbb9aa.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../css/main.css">
-   <link rel="icon" type="image/x-icon" href="../assets/icons/pinwheel.ico">
+   <link rel="icon" type="image/x-icon" href="../assets/logos/pinwheel.ico">
 </head>
 <body>
    <header class="navHeader">
-      <div class="container">
-         <img class="myLogo" src="../assets/icons/johnFoxLogo.png" alt="Blue and orange pinwheel and corndog with mustard">
-         <nav>
-            <ul>
-               <li><a href="../../index.html">
-                  <img src="../assets/icons/homeIcon.png" alt="home icon">
-                  Home
-               </a></li>
-               <li><a href="games.html">
-                  <img src="../assets/icons/controllerIcon.png" alt="controller icon">
-                  Gaming
-               </a></li>
-               <li><a href="academic.html">
-                  <img src="../assets/icons/gradCapIcon.png" alt="graduation cap icon">
-                  Academic
-               </a></li>
-               <li><a href="professional.html">
-                  <img src="../assets/icons/jobIcon.png" alt="stick man carrying briefcase">
-                  Professional
-               </a></li>
-               <li><a href="travel.html">
-                  <img src="../assets/icons/carIcon.png" alt="car icon">
-                  Travel
-               </a></li>
-            </ul>
-         </nav>
-      </div>
-   </header>
+		<div class="container">
+			<img class="myLogo" src="../assets/logos/johnFoxLogo.png" alt="Blue and orange pinwheel and corndog with mustard">
+			<nav>
+				<ul>
+					<li><a href="../../index.html">
+						<i class="fa-solid fa-house navIcon"></i>
+						Home
+					</a></li>
+					<li><a href="games.html">
+						<i class="fa-solid fa-gamepad navIcon"></i>
+						Gaming
+					</a></li>
+					<li><a href="academic.html">
+						<i class="fa-solid fa-graduation-cap navIcon"></i>
+						Academic
+					</a></li>
+					<li><a href="professional.html">
+						<i class="fa-solid fa-user-tie navIcon"></i>
+						Professional
+					</a></li>
+					<li><a href="travel.html">
+						<i class="fa-solid fa-car-side navIcon"></i>
+						Travel
+					</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
    <h1 class="topHeader">
-      <img class="headerIcon" src="../assets/icons/controllerIcon.png" alt="controller logo simple"> Gaming
+      <i class="fa-solid fa-gamepad headerIcon"></i> Gaming
    </h1>
    <div id="animaitonContainer">
       <div id="animation1">
@@ -57,7 +58,7 @@
             <ul>
                <li>
                   <a href="https://steamcommunity.com/id/jff97/" target="_blank">
-                     <img class="linkIcon" src="../assets/icons/steamIcon.png" alt="steam Icon">
+                     <img class="linkIcon" src="../assets/logos/steam.png" alt="steam Icon">
                   </a>
                </li>
             </ul>
@@ -78,7 +79,12 @@
                </td>
                <td>10/10</td>
                <td>Greatest Game of all time</td>
-               <td><a class="genLink" href="game/minecraft.html">Minecraft pics</a></td>
+               <td>
+                  <a class="textLink" href="game/minecraft.html">
+                     Minecraft pics
+                     <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+               </td>
             </tr>
             <tr>
                <td class="gameLogoCol">
@@ -86,7 +92,12 @@
                </td>
                <td>8.5/10</td>
                <td>Better then Destiny and came out first</td>
-               <td><a class="genLink" href="game/warframe.html">Warframe pics</a></td>
+               <td>
+                  <a class="textLink" href="game/warframe.html">
+                  Warframe pics
+                  <i class="fa-solid fa-up-right-from-square"></i>
+               </a>
+            </td>
             </tr>
             <tr>
                <td class="gameLogoCol">
@@ -94,7 +105,12 @@
                </td>
                <td>8/10</td>
                <td>Lots of grinding but fun if you have the time</td>
-               <td><a class="genLink" href="game/gta5.html">GTA 5 pics</a></td>
+               <td>
+                  <a class="textLink" href="game/gta5.html">
+                  GTA 5 pics
+                  <i class="fa-solid fa-up-right-from-square"></i>
+               </a>
+            </td>
             </tr>
             <tr>
                <td class="gameLogoCol">
@@ -102,7 +118,12 @@
                </td>
                <td>8.2/10</td>
                <td>Chronicles edition is great because it has remastered versions of all the best maps from over the years</td>
-               <td><a class="genLink" href="game/bo3.html">B03 pics</a></td>
+               <td>
+                  <a class="textLink" href="game/bo3.html">
+                     B03 pics
+                     <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+               </td>
             </tr>
             <tr>
                <td class="gameLogoCol">
@@ -110,31 +131,76 @@
                </td>
                <td>8/10</td>
                <td>If your good at it its super fun. It is the only competive shooter I willingly play</td>
-               <td><a class="genLink" href="#">Halo </a></td>
+               <td>
+                  <a class="textLink" href="#">
+                     Halo 
+                     <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+               </td>
             </tr>
          </table>
       </div>
       <div class="rightOfMain"><br></div>
    </div>
+   <div id="themeContainer">
+      <div id="formInputs">
+         <div class="radioContainer">
+            <label for="default1">Default 1</label><br>
+            <input type="radio" id="default1" name="theme" onclick="radioClick('default1')">
+         </div>
+         <div class="radioContainer">
+            <label for="default2">Default 2</label><br>
+            <input type="radio" id="default2" name="theme" onclick="radioClick('default2')">
+         </div>
+         <div class="radioContainer">
+            <label for="customTheme">Custom</label><br>
+            <input type="radio" id="customTheme" name="theme" onclick="radioClick('customTheme')">
+         </div>
+      </div>
+      <div id="themeSpacerBar"></div>
+      <div id="colorInputContainer">
+         <div class="colorInput">
+            <label for="clrInput1">Color 1</label>
+            <input type="color" name="clrInput1" id="clrInput1" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput2">Color 2</label>
+            <input type="color" name="clrInput2" id="clrInput2" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput3">Color 3</label>
+            <input type="color" name="clrInput3" id="clrInput3" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput4">Color 4</label>
+            <input type="color" name="clrInput4" id="clrInput4" disabled onchange="applyCustomColors()">
+         </div>
+      </div>
+   </div>
    <div class="footer">
       <br>
-      <img src="../assets/icons/lawIcon.png" alt="law icon"> Licensed Under a <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">MIT License</a><br>
-         <br>
+      <i class="fa-solid fa-scale-balanced footerIcon"></i> 
+      Licensed Under a 
+      <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">
+         MIT License
+      </a><br>
+      <br>
       <b>Contact Info</b>
       <ul>
          <li>
-            <img src="../assets/icons/emailIcon.png" alt="email icon">
-            jicfox7@gmail.com
-         </li>
-         <li>
-            <img src="../assets/icons/phoneIcon.png" alt="phone icon">
+            <i class="fa-solid fa-phone footerIcon"></i>
             (715)-523-1588
          </li>
          <li>
-            <img src="../assets/icons/locationIcon.png" alt="gps location icon">
+            <i class="fa-solid fa-envelope footerIcon"></i>
+            jicfox7@gmail.com
+         </li>
+         <li>
+            <i class="fa-solid fa-location-dot footerIcon"></i>
             La Crosse WI 54601
          </li>
       </ul>
    </div>
+   <script src="../javascript/themeChanger.js"></script>
 </body>
 </html>
