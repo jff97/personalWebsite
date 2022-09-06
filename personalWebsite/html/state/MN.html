@@ -8,54 +8,57 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Minnesota vacation pictures | Fox</title>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script src="https://kit.fontawesome.com/70c0cbb9aa.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../../css/main.css">
-   <link rel="icon" type="image/x-icon" href="../../assets/icons/pinwheel.ico">
+   <link rel="icon" type="image/x-icon" href="../../assets/logos/pinwheel.ico">
 </head>
 <body>
-  <header class="navHeader">
-    <div class="container">
-      <img class="myLogo" src="../../assets/icons/johnFoxLogo.png" alt="Blue and orange pinwheel and corndog with mustard">
-       <nav>
-          <ul>
-            <li><a href="../../../index.html">
-              <img src="../../assets/icons/homeIcon.png" alt="home icon">
-              Home
-           </a></li>
-           <li><a href="../games.html">
-              <img src="../../assets/icons/controllerIcon.png" alt="controller icon">
-              Gaming
-           </a></li>
-           <li><a href="../academic.html">
-              <img src="../../assets/icons/gradCapIcon.png" alt="graduation cap icon">
-              Academic
-           </a></li>
-           <li><a href="../professional.html">
-              <img src="../../assets/icons/jobIcon.png" alt="stick man carrying briefcase">
-              Professional
-           </a></li>
-           <li><a href="../travel.html">
-              <img src="../../assets/icons/carIcon.png" alt="car icon">
-              Travel
-           </a></li>
-          </ul>
-       </nav>
-    </div>
- </header>
-  <!-- Header -->
-  <div class="header">
-    <h1 class="topHeader">
-      <img class="headerIcon" src="../../assets/icons/carIcon.png" alt="simple car logo without background">Minnesota
-    </h1>
-    
-    <div class="flexContainer">
+   <header class="navHeader">
+		<div class="container">
+			<img class="myLogo" src="../../assets/logos/johnFoxLogo.png" alt="Blue and orange pinwheel and corndog with mustard">
+			<nav>
+				<ul>
+					<li><a href="../../../index.html">
+						<i class="fa-solid fa-house navIcon"></i>
+						Home
+					</a></li>
+					<li><a href="../games.html">
+						<i class="fa-solid fa-gamepad navIcon"></i>
+						Gaming
+					</a></li>
+					<li><a href="../academic.html">
+						<i class="fa-solid fa-graduation-cap navIcon"></i>
+						Academic
+					</a></li>
+					<li><a href="../professional.html">
+						<i class="fa-solid fa-user-tie navIcon"></i>
+						Professional
+					</a></li>
+					<li><a href="../travel.html">
+						<i class="fa-solid fa-car-side navIcon"></i>
+						Travel
+					</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+   <div class="header">
+      <h1 class="topHeader">
+         <i class="fa-solid fa-car-side headerIcon"></i> Minnesota
+      </h1>
+   </div>
+   <div class="flexContainer">
       <div class="leftOfMain"><br></div>
       <div class="centerColumn">
          Resize browser window to see responsive effect on the gallery
          <h1>
-            <img class="galleryIcon" src="../../assets/icons/calendarIcon.png" alt="calendar icon"> 
+            <i class="fa-solid fa-calendar-days travelInfoIcon"></i><br> 
             Visited November 8th 2020
          </h1>
-         <h2><img class="galleryIcon" src="../../assets/icons/locationIconBlue.png">Places Visited</h2>
+         <h2>
+            <i class="fa-solid fa-location-dot travelInfoIcon"></i><br>
+            Places Visited
+         </h2>
          <div class="centered">
             <ul class="galleryList">
                <li>Mall of America</li>
@@ -66,35 +69,76 @@
          </div>
       </div>
       <div class="rightOfMain"><br></div>
-  </div>
+   </div>
   
-  <!-- Photo Grid -->
-  <div class="picFlow"> 
-   <img src="../../assets/states/minnesota/2C4085AE-.jpg" alt="minnesota travel picture">
-   <img src="../../assets/states/minnesota/78702336-.jpg" alt="minnesota travel picture">
-   <img src="../../assets/states/minnesota/C1F050BB-.jpg" alt="minnesota travel picture">
-   <img src="../../assets/states/minnesota/DDE2140B-.jpg" alt="minnesota travel picture">
-   <img src="../../assets/states/minnesota/IMG_2050.jpg" alt="minnesota travel picture">
-   <img src="../../assets/states/minnesota/IMG_2051.jpg" alt="minnesota travel picture">
-
-  </div>
-  <div class="footer">
-    <br><img src="../../assets/icons/lawIcon.png" alt="law icon"> Licensed Under a <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">MIT License</a><br><br>
-    <b>Contact Info</b>
-    <ul>
-       <li>
-          <img src="../../assets/icons/emailIcon.png" alt="email icon">
-          jicfox7@gmail.com
-       </li>
-       <li>
-          <img src="../../assets/icons/phoneIcon.png" alt="phone icon">
-          (715)-523-1588
-       </li>
-       <li>
-          <img src="../../assets/icons/locationIcon.png" alt="gps location icon">
-          La Crosse WI 54601
-       </li>
-    </ul>
- </div>
+   <!-- Photo Grid -->
+   <div class="picFlow"> 
+      <img src="../../assets/states/minnesota/2C4085AE-.jpg" alt="minnesota travel picture">
+      <img src="../../assets/states/minnesota/78702336-.jpg" alt="minnesota travel picture">
+      <img src="../../assets/states/minnesota/C1F050BB-.jpg" alt="minnesota travel picture">
+      <img src="../../assets/states/minnesota/DDE2140B-.jpg" alt="minnesota travel picture">
+      <img src="../../assets/states/minnesota/IMG_2050.jpg" alt="minnesota travel picture">
+      <img src="../../assets/states/minnesota/IMG_2051.jpg" alt="minnesota travel picture">
+   </div>
+   <div id="themeContainer">
+      <div id="formInputs">
+         <div class="radioContainer">
+            <label for="default1">Default 1</label><br>
+            <input type="radio" id="default1" name="theme" onclick="radioClick('default1')">
+         </div>
+         <div class="radioContainer">
+            <label for="default2">Default 2</label><br>
+            <input type="radio" id="default2" name="theme" onclick="radioClick('default2')">
+         </div>
+         <div class="radioContainer">
+            <label for="customTheme">Custom</label><br>
+            <input type="radio" id="customTheme" name="theme" onclick="radioClick('customTheme')">
+         </div>
+      </div>
+      <div id="themeSpacerBar"></div>
+      <div id="colorInputContainer">
+         <div class="colorInput">
+            <label for="clrInput1">Color 1</label>
+            <input type="color" name="clrInput1" id="clrInput1" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput2">Color 2</label>
+            <input type="color" name="clrInput2" id="clrInput2" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput3">Color 3</label>
+            <input type="color" name="clrInput3" id="clrInput3" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput4">Color 4</label>
+            <input type="color" name="clrInput4" id="clrInput4" disabled onchange="applyCustomColors()">
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <br>
+      <i class="fa-solid fa-scale-balanced footerIcon"></i> 
+      Licensed Under a 
+      <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">
+         MIT License
+      </a><br>
+      <br>
+      <b>Contact Info</b>
+      <ul>
+         <li>
+            <i class="fa-solid fa-phone footerIcon"></i>
+            (715)-523-1588
+         </li>
+         <li>
+            <i class="fa-solid fa-envelope footerIcon"></i>
+            jicfox7@gmail.com
+         </li>
+         <li>
+            <i class="fa-solid fa-location-dot footerIcon"></i>
+            La Crosse WI 54601
+         </li>
+      </ul>
+   </div>   
+   <script src="../../javascript/themeChanger.js"></script>
 </body>
 </html>

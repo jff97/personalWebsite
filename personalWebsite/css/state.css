@@ -26,6 +26,7 @@ path:hover, circle:hover {
   z-index: 1;
   background-color: var(--offWhite);
   border: 4px solid var(--bright);
+  color: var(--dark);
   border-radius: 5px;
   padding: 5px;
   font-family: arial;
@@ -35,6 +36,7 @@ path:hover, circle:hover {
 /*my additions*/
 #mapContainer {
   background-color: var(--dark);
+  margin-bottom: 7vh;
 }
 /*Fill this in when you add a new state
 This is the list of visited states*/
