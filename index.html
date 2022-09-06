@@ -47,39 +47,68 @@
    <div class="flexContainer">
       <div class="leftOfMain"><br></div>
       <div class="centerColumn">
-         <div class="until" id="gradCountdown">
-            <div id="gradDescription" style="background-color: transparent;">
-               <i class="fa-solid fa-graduation-cap headerIcon"></i>
+         <div class="flexContainer">
+            <div id="headshotContainer">
+               <div id="profilePicContainer">
+                  <div id="alternateContainer">
+                     <img id="profile1" class="profilePic" src="personalWebsite/assets/misc/headshot.png">
+                     <img id="profile2" class="profilePic" src="personalWebsite/assets/logos/johnFoxLogo.png">
+                  </div>
+                  <img id="rainbowBackground" src="personalWebsite/assets/misc/colorWheel.png">
+               </div>
+               <div id="headshotInfo">
+                  <div id="headshotWords">
+                     <p>Senior Comp Sci Student</p>
+                     <a id="headshotLink" href="https://www.uwlax.edu/" target="_blank">University of Wisconsin La Crosse</a>
+                  </div>
+                  <div id="headshotIconContainer">
+                     <span>
+                        <a href="https://github.com/jff97" onclick="displayLinkInfo('github')" target="_blank"><i class="fa-brands fa-github headshotIcon"></i></a>
+                     </span>
+                     <span>
+                        <a href="mailto:jicfox7@gmail.com" onclick="displayLinkInfo('email')"><i class="fa-solid fa-envelope headshotIcon"></i></a>
+                     </span>
+                     <span>
+                        <a href="tel:7155231588" onclick="displayLinkInfo('phone')"><i class="fa-solid fa-phone headshotIcon"></i></a>
+                     </span>
+                  </div>
+                  <div id="linkDisplay"></div>
+               </div>
             </div>
-            <div class="until__component">
-               <div class="until__numeric until__numeric--years">00</div>
-               <div class="until__unit">yrs</div>
-            </div>
-            <div class="until__component">
-               <div class="until__numeric until__numeric--months">00</div>
-               <div class="until__unit">mos</div>
-            </div>
-            <div class="until__component">
-               <div class="until__numeric until__numeric--days">00</div>
-               <div class="until__unit">days</div>
-            </div>
-            <div class="until__component">
-               <div class="until__numeric until__numeric--hours">00</div>
-               <div class="until__unit">hrs</div>
-            </div>
-            <div class="until__component">
-               <div class="until__numeric until__numeric--minutes">00</div>
-               <div class="until__unit">mins</div>
-            </div>
-            <div class="until__component">
-               <div class="until__numeric until__numeric--seconds">00</div>
-               <div class="until__unit">sec</div>
-            </div>
-            <div class="until__event">
-               <br>
-            </div> 
-            <div id="gradDescription">
-               Which is when I graduate with a Major in Computer Science
+            <div class="until" id="gradCountdown">
+               <div id="gradDescription" style="background-color: transparent;">
+                  <i class="fa-solid fa-graduation-cap headerIcon"></i>
+               </div>
+               <div class="until__component">
+                  <div class="until__numeric until__numeric--years">00</div>
+                  <div class="until__unit">yrs</div>
+               </div>
+               <div class="until__component">
+                  <div class="until__numeric until__numeric--months">00</div>
+                  <div class="until__unit">mos</div>
+               </div>
+               <div class="until__component">
+                  <div class="until__numeric until__numeric--days">00</div>
+                  <div class="until__unit">days</div>
+               </div>
+               <div class="until__component">
+                  <div class="until__numeric until__numeric--hours">00</div>
+                  <div class="until__unit">hrs</div>
+               </div>
+               <div class="until__component">
+                  <div class="until__numeric until__numeric--minutes">00</div>
+                  <div class="until__unit">mins</div>
+               </div>
+               <div class="until__component">
+                  <div class="until__numeric until__numeric--seconds">00</div>
+                  <div class="until__unit">sec</div>
+               </div>
+               <div class="until__event">
+                  <br>
+               </div> 
+               <div id="gradDescription">
+                  Which is when I graduate with a Major in Computer Science
+               </div>
             </div>
          </div>
          <div id="bio">
@@ -169,5 +198,6 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.3/plugin/duration.min.js" integrity="sha512-QxVJ3lAILV0RSq3wPNV5CFNyyywxd5QfA9jfGfzVViwpL/eWSi5dR1nZMc02c+QE4xz2L1eQvx/fn18RrUq9lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="personalWebsite/javascript/gradcounter.js"></script>
    <script src="personalWebsite/javascript/themeChanger.js"></script>
+   <script src="personalWebsite/javascript/contactDisplay.js"></script>
 </body>
 </html>
