@@ -36,6 +36,7 @@ path:hover, circle:hover {
 /*my additions*/
 #mapContainer {
   background-color: var(--dark);
+  margin-bottom: 7vh;
 }
 /*Fill this in when you add a new state
 This is the list of visited states*/

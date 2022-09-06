@@ -127,10 +127,19 @@ function initializeThemes() {
    //instantiate the default1 theme object
    defaultTheme1 = new Theme(color1, color2, color3, color4);
    //set all the colors for default2 theme
-   color1 = "#D9B626";
-   color2 = "#26D9B6";
-   color3 = "#B626D9";
-   color4 = "#FFFFFF";
+   
+   //old triadic color scheme
+   //color1 = "#D9B626";
+   //color2 = "#26D9B6";
+   //color3 = "#B626D9";
+   //color4 = "#FFFFFF";
+
+   //new tetradic color scheme
+   color2 = "#4B2ED1";
+   color4 = "#D12E62";
+   color3 = "#B4D12E";
+   color1 = "#2ED19D";
+
    //instantiate the default2 theme object
    defaultTheme2 = new Theme(color1, color2, color3, color4);
    //
