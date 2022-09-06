@@ -409,6 +409,26 @@ nav a:hover::before {
       transform: translateX(0%);
    }
 }
+@keyframes alternate1 {
+   0% {
+
+   }
+  60% {
+
+  }
+  100% {
+
+  }
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
 @keyframes rainbowFade {
    0% {
       background-image: linear-gradient(to left, violet, #9D41B8, indigo, #2600C1, blue, #004080, green,#80C000, yellow,#FFD200, orange, #FF5300, red);
@@ -644,11 +664,26 @@ nav a:hover::before {
 #profilePicContainer {
    position: relative;
    width: 75%;
+   padding-bottom: 75%;
    margin-left: 12.5%;
 }
-#profilePicContainer img {
-   width: 100%;
+#profilePic{
+   position: absolute;
+   width: 85%;
+   z-index: 4;
+   top: 7.5%;
+   left: 7.5%;
 }
+#rainbowBackground {
+   position: absolute;
+   width: 100%;
+   z-index: 2;
+   animation-name: spin;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
 
 .quicklinks {
    margin-left: 15%;
