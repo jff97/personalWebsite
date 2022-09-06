@@ -523,6 +523,7 @@ nav a:hover::before {
 .flexContainer {
    display: flex;
    flex-direction: row;
+   background-color: green;
 }
 .centerColumn {
    width: 60%;
@@ -633,12 +634,22 @@ nav a:hover::before {
    gap: 3%;
    padding: 5%;
    padding-bottom: 14%;
-   /*Margin determines the size of the grid display*/
-   margin-left: 15%;
-   margin-right: 15%;
-   margin-top: 3%;
-   margin-bottom: 10%;
+   
 }
+#headshotContainer {
+   width: 50%;
+   height: 30vh;
+   background-color: red;
+}
+#profilePicContainer {
+   position: relative;
+   width: 75%;
+   margin-left: 12.5%;
+}
+#profilePicContainer img {
+   width: 100%;
+}
+
 .quicklinks {
    margin-left: 15%;
    margin-right: 15%;
