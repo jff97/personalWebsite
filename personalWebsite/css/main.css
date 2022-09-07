@@ -73,7 +73,7 @@
 /*fontawesome icon styling here*/
 .headerIcon {
    vertical-align: middle;
-   font-size: 17vw;
+   font-size: 15vw;
    color: var(--brightContrast);
 }
 .navIcon {
