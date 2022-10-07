@@ -45,6 +45,6 @@ This is the list of visited states*/
   fill: var(--brightContrast) !important;
 }
 */
-#WI, #MN , #IL, #IN, #KY, #TN, #GA, #FL, #IA {
+#WI, #MN , #IL, #IN, #KY, #TN, #GA, #FL {
   fill: var(--brightContrast) !important;
 }
