@@ -857,6 +857,32 @@ nav a:hover::before {
    vertical-align: middle;
    align-self: center;
  }
+ .terrariaRefrence {
+   width: 70%;
+   margin-left: 15%;
+   text-align: center;
+   font-size: 320%;
+   margin-bottom: 4%;
+ }
+
+ .fullScreenPic {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+   margin-bottom: 5vh;
+ }
+ 
+ /* Create four equal columns that sits next to each other */
+ .fullScreenPic > img {
+   flex-wrap: wrap;
+   flex: 100%;
+   max-width: 100%;
+   padding: 0 1%;
+   margin-top: 8px;
+   vertical-align: middle;
+   align-self: center;
+ }
+
  
  /* Responsive layout - makes a two column-layout instead of three columns */
  @media (max-width: 800px) {
