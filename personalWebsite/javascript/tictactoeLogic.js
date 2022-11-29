@@ -1,5 +1,5 @@
 /**
- * @file the logic behind the tic tac toe game displayed on its own page under academic.html
+ * @file the logic behind the tic tac toe game displayed on its own page Under academic.html
  * author John Fox
  * This code is all original and not copied from a tutorial
  */
