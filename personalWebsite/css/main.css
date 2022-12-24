@@ -642,6 +642,8 @@ nav a:hover::before {
    border: 3px solid var(--offWhite);
    border-radius: 15px;
    padding: 6px;
+   font-size: 270%;
+   color: var(--dark);
 }
 .linkIcon:hover {
    border: 3px solid var(--dark);
@@ -691,7 +693,7 @@ nav a:hover::before {
    border-radius: 7px;
 }
 .downloadButton:hover {
-   background-color: #2a6d9a;
+   background-color: var(--brightContrast);
 }
 .footer {
    background-color:var(--bright);
