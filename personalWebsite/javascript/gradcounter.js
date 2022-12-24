@@ -25,7 +25,7 @@ function activateCountdown(element, dateString) {
       element.querySelector(".until__numeric--hours").textContent = gradDuration.hours().toString();
       element.querySelector(".until__numeric--days").textContent = gradDuration.asDays().toFixed(0).toString();
       //element.querySelector(".until__numeric--months").textContent = gradDuration.months().toString();
-      element.querySelector(".until__numeric--years").textContent = gradDuration.years().toString();
+      //element.querySelector(".until__numeric--years").textContent = gradDuration.years().toString();
    }, 250)
 }
 
