@@ -23,8 +23,8 @@ function activateCountdown(element, dateString) {
       element.querySelector(".until__numeric--seconds").textContent = gradDuration.seconds().toString();
       element.querySelector(".until__numeric--minutes").textContent = gradDuration.minutes().toString();
       element.querySelector(".until__numeric--hours").textContent = gradDuration.hours().toString();
-      element.querySelector(".until__numeric--days").textContent = gradDuration.days().toFixed(0).toString();
-      element.querySelector(".until__numeric--months").textContent = gradDuration.months().toString();
+      element.querySelector(".until__numeric--days").textContent = gradDuration.asDays().toFixed(0).toString();
+      //element.querySelector(".until__numeric--months").textContent = gradDuration.months().toString();
       element.querySelector(".until__numeric--years").textContent = gradDuration.years().toString();
    }, 250)
 }
