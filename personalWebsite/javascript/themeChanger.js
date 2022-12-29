@@ -134,11 +134,11 @@ function initializeThemes() {
    //color3 = "#B626D9";
    //color4 = "#FFFFFF";
 
-   //new tetradic color scheme
-   color2 = "#4B2ED1";
-   color4 = "#D12E62";
-   color3 = "#B4D12E";
-   color1 = "#2ED19D";
+   //new maryam inspiree color scheme
+   color1 = "#168816"
+   color2 = "#c8d755"
+   color3 = "#8b4513"
+   color4 = "#000000"
 
    //instantiate the default2 theme object
    defaultTheme2 = new Theme(color1, color2, color3, color4);
