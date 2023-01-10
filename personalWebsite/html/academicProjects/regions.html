@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="R_Tree visualizer">
+   <meta name="keywords" content="R_Tree, r tree, visualizer, regions, Computer Science, Personal Website, John Fox, Portfolio, Internship, Job">
+   <meta name="author" content="John Isaac Fox">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>R_Tree Visualizer</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script src="https://kit.fontawesome.com/70c0cbb9aa.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../../css/main.css">
+   <link rel="icon" type="image/x-icon" href="../../assets/logos/pinwheel.ico">
+
+   <link rel="stylesheet" href="../../css/regionGui.css">
+</head>
+<body>
+   <header class="navHeader">
+		<div class="container">
+			<img class="myLogo" src="../../assets/logos/johnFoxLogo.png" alt="Blue and orange pinwheel and corndog with mustard">
+			<nav>
+				<ul>
+					<li><a href="../../../index.html">
+						<i class="fa-solid fa-house navIcon"></i>
+						Home
+					</a></li>
+					<li><a href="../games.html">
+						<i class="fa-solid fa-gamepad navIcon"></i>
+						Gaming
+					</a></li>
+					<li><a href="../academic.html">
+						<i class="fa-solid fa-graduation-cap navIcon"></i>
+						Academic
+					</a></li>
+					<li><a href="../professional.html">
+						<i class="fa-solid fa-user-tie navIcon"></i>
+						Professional
+					</a></li>
+					<li><a href="../travel.html">
+						<i class="fa-solid fa-car-side navIcon"></i>
+						Travel
+					</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+   <h1 class="topHeader">
+      <i class="fa-solid fa-lightbulb headerIcon"></i> R_Tree Visualizer
+   </h1>
+   <div class="flexContainer">
+      <div class="leftOfMain"><br></div>
+      <div class="centerColumn">
+         <div id="regionGuiContainer">
+            <div id="topSelection">
+               <div class="sectionHeader">
+                  <br>
+                  Leaf Generation Options
+                  <br><br>
+               </div>
+               <div id="guiTypeSelection">
+                  <div id="presetRadio" class="guiRadio">
+                     <div class="guiRadioLabel">
+                        Preset
+                     </div>
+                     <input type="radio" name="guiSelection" onclick="gui.selectGuiType('preset')" checked="checked">
+                  </div>
+                  <div id="manualRadio" class="guiRadio">
+                     <div class="guiRadioLabel">
+                        Manual
+                     </div>
+                     <input type="radio" name="guiSelection" onclick="gui.selectGuiType('manual')">
+                  </div>
+                  <div id="randomRadio" class="guiRadio">
+                     <div class="guiRadioLabel">
+                        Random
+                     </div>
+                     <input type="radio" name="guiSelection" onclick="gui.selectGuiType('random')">
+                  </div>
+               </div>
+               <div id="sectionContainer">
+                  <div id="preset" class="guiSection">
+                     <div class="presetEntry">
+                        <button onclick="gui.test1()">Test 1</button>
+                        <div>Random Leaf shapes are made circles or rectangles randomly</div>
+                     </div>
+                     <div class="presetEntry">
+                        <button onclick="gui.test2()">Test 2</button>
+                        <div>Random Leaf shapes are all rectangles</div>
+                     </div>
+                     <div class="presetEntry">
+                        <button onclick="gui.test3()">Test 3</button>
+                        <div>Random Leaf shapes are all circles</div>
+                     </div>
+                     <div class="presetEntry">
+                        <button onclick="gui.test4()">Test 4</button>
+                        <div>4 leaf circles picked manually. 2 circles are intersecting</div>
+                     </div>
+                     <div class="presetEntry">
+                        <button onclick="gui.test5()">Test 5</button>
+                        <div>Test 4 with one circle swapped for a rectangle. No Intersecting</div>
+                     </div>
+                     <div class="presetEntry">
+                        <button onclick="gui.test6()">Test 6</button>
+                        <div>Add a large rectangle far away from test 5</div>
+                     </div>
+                  </div>
+         
+                  <div id="manual" class="guiSection">
+                     <div class="rectCirInputs sectionColumn">
+                        <div class="sectionHeader">Rectangle</div>
+                        <div class="textInputs">
+                           <div>
+                              Min X<br>
+                              <input type="text" class="inputNum" id="manMinX">
+                           </div>
+                           <div>
+                              Min Y<br>
+                              <input type="text" class="inputNum" id="manMinY">
+                           </div>
+                           <div>
+                              Width<br>
+                              <input type="text" class="inputNum" id="manWidth">
+                           </div>
+                           <div>
+                              Height<br>
+                              <input type="text" class="inputNum" id="manHeight">
+                           </div>
+                        </div>
+                        <div class="manualButtons">
+                           <button onclick="gui.addManualRect()">Add Rectangle</button>
+                           <Br>
+                           <button onclick="RegionGui.fillManRect()">Fill Random</button> 
+                        </div>
+                     </div>
+                     <div class="rectCirInputs sectionColumn">
+                        <div class="sectionHeader">Circle</div> 
+                        <div class="textInputs">
+                           <div>
+                              Center X<br>
+                              <input type="text" class="inputNum" id="manCntrX">
+                           </div>
+                           <div>
+                              Center Y<br>
+                              <input type="text" class="inputNum" id="manCntrY">
+                           </div>
+                           <div>
+                              Radius<br>
+                              <input type="text" class="inputNum" id="manRadius">
+                           </div>
+                        </div>
+                        <div class="manualButtons">
+                           <button onclick="gui.addManualCircle()">Add Circle</button>
+                           <br>
+                           <button onclick="RegionGui.fillManCircle()">Fill Random</button>
+                        </div>
+                     </div>
+         
+                     <div class="sectionColumn">
+                        <div class="sectionHeader">Color</div>
+                        <input id="manualColor" type="color" value="#bf40bf"><Br>
+                        <button onclick="RegionGui.fillManColor()">Fill<br>Rand<br>Color</button>
+                     </div>
+                  </div>
+         
+                  <div id="random" class="guiSection">
+                     <div id="randRectangle" class="sectionColumn">
+                        <div class="sectionHeader">Rectangles</div>
+                        <div id="textInputs">
+                           <div>
+                              Min Width<br>
+                              <input type="text" class="inputNum" id="randMinWidth" value="1">
+                           </div>
+                        </div>
+                        <div id="textInputs">
+                           <div>
+                              Max Width<br>
+                              <input type="text" class="inputNum" id="randMaxWidth" value="10">
+                           </div>
+                        </div>
+                        <div id="textInputs">
+                           <div>
+                              Min Height<br>
+                              <input type="text" class="inputNum" id="randMinHeight" value="1">
+                           </div>
+                        </div>
+                        <div id="textInputs">
+                           <div>
+                              Max Height<br>
+                              <input type="text" class="inputNum" id="randMaxHeight" value="10">
+                           </div>
+                        </div>
+                        <div id="randColor">
+                           <div class="guiRadio">
+                              <input type="radio" name="randRectColor" value="notRandom">
+                              <input type="color" value="#bf40bf" id="rectSelectColor">
+                           </div>
+                           <div class="guiRadio">
+                              <input type="radio" name="randRectColor" checked="checked" value="random">
+                              <div>rand<br>color</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="randCircle" class="sectionColumn">
+                        <div class="sectionHeader">Circles</div>
+                        <div>
+                           Min Diameter<br>
+                           <input type="text" class="inputNum" id="randMinDia" value="1">
+                        </div>
+                        <div>
+                           Max Diameter<br>
+                           <input type="text" class="inputNum" id="randMaxDia" value="10">
+                        </div>
+                        <div id="randColor">
+                           <div class="guiRadio">
+                              <input type="radio" name="randCircleColor" value="notRandom">
+                              <input type="color" value="#bf40bf" id="circleSelectColor">
+                           </div>
+                           <div class="guiRadio">
+                              <input type="radio" name="randCircleColor" checked="checked" value="random">
+                              <div>rand<br>color</div>
+                           </div>
+                        </div>
+                     </div>
+         
+                     <div id="randLeafShapeType" class="sectionColumn">
+                        <div class="sectionHeader">Leaf Shape Types</div>
+                        <div id="shapeSelection">
+                           <input type="radio" name="leafShapeTypes" value="circle"> All Circles<br>
+                           <input type="radio" name="leafShapeTypes" value="rect"> All Rectangles<br>
+                           <input type="radio" name="leafShapeTypes" value="random" checked="checked"> Random Mix<br>
+                           How Many<br>
+                           <input type="text" class="inputNum" id="randomLeafNum" value="15">
+                        </div>
+                        <br>
+                        <button onclick="gui.addRandoms()">Generate Shapes</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="bottomSelections">
+               <div class="sectionHeader">Reduce Options<br><br></div>
+               <div id="randCombineShapeType" class="sectionColumn">
+                  Combination Shape Types
+                  <div id="shapeSelection">
+                     <input type="radio" name="combineShapeType" value="circle"> All Circles<br>
+                     <input type="radio" name="combineShapeType" value="rect"> All Rectangles<br>
+                     <input type="radio" name="combineShapeType" value="random" checked="checked"> Random Mix<br>
+                  </div>
+               </div>
+               <br>
+               <div class="sectionColumn" id="reduceButtons">
+                  <button onclick="gui.reduceList()">Reduce Shapes</button>
+               <button onclick="gui.clearRegionList(); gui.clearOutput(); gui.clearStates()">Clear Shapes</button>
+               <br>
+               <button onclick="gui.stateBegin()">Beginning</button>
+               <button onclick="gui.stateEnd()">End</button>
+               <br>
+               <button onclick="gui.stateForward()">Step Forward</button>
+               <button onclick="gui.stateBack()">StepBack</button>
+               </div>
+            </div>
+         </div>
+         <div id="svgContainer"></div>
+      </div>
+      <div class="rightOfMain"><br></div>
+   </div>
+   <div id="themeContainer">
+      <div id="formInputs">
+         <div class="radioContainer">
+            <label for="default1">Default 1</label><br>
+            <input type="radio" id="default1" name="theme" onclick="radioClick('default1')">
+         </div>
+         <div class="radioContainer">
+            <label for="default2">Default 2</label><br>
+            <input type="radio" id="default2" name="theme" onclick="radioClick('default2')">
+         </div>
+         <div class="radioContainer">
+            <label for="customTheme">Custom</label><br>
+            <input type="radio" id="customTheme" name="theme" onclick="radioClick('customTheme')">
+         </div>
+      </div>
+      <div id="themeSpacerBar"></div>
+      <div id="colorInputContainer">
+         <div class="colorInput">
+            <label for="clrInput1">Color 1</label>
+            <input type="color" name="clrInput1" id="clrInput1" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput2">Color 2</label>
+            <input type="color" name="clrInput2" id="clrInput2" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput3">Color 3</label>
+            <input type="color" name="clrInput3" id="clrInput3" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput4">Color 4</label>
+            <input type="color" name="clrInput4" id="clrInput4" disabled onchange="applyCustomColors()">
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <br>
+      <i class="fa-solid fa-scale-balanced footerIcon"></i> 
+      Licensed Under an 
+      <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">
+         MIT License
+      </a><br>
+      <br>
+      <b>Contact Info</b>
+      <ul>
+         <li>
+            <i class="fa-solid fa-phone footerIcon"></i>
+            (715)-523-1588
+         </li>
+         <li>
+            <i class="fa-solid fa-envelope footerIcon"></i>
+            jicfox7@gmail.com
+         </li>
+         <li>
+            <i class="fa-solid fa-location-dot footerIcon"></i>
+            La Crosse WI 54601
+         </li>
+      </ul>
+   </div>
+   <script src="../../javascript/themeChanger.js"></script>
+   <script src="../../javascript/rTreeVisual/shapes/Point.js"></script>
+   <script src="../../javascript/rTreeVisual/shapes/circleFitter.js"></script>
+   <script src="../../javascript/rTreeVisual/shapes/Shape.js"></script>
+   <script src="../../javascript/rTreeVisual/shapes/Rectangle.js"></script>
+   <script src="../../javascript/rTreeVisual/shapes/Circle.js"></script>
+   <script src="../../javascript/rTreeVisual/regions/RegionObfus.js"></script>
+   <script src="../../javascript/rTreeVisual/regions/RegionGuiObfus.js"></script>
+</body>
+</html>

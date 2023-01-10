@@ -1,0 +1,115 @@
+#regionGuiContainer {
+   width: 95%;
+   margin-left: 2.5%;
+   margin-top: 3vh;
+}
+#regionGuiContainer button {
+   background-color: var(--brightContrast);
+}
+
+#svgContainer {
+   width: 65%;
+   margin-left: 17.5%;
+   padding: 1%;
+   text-align: center;
+   background-color: white;
+   margin-top: 2vh;
+}
+
+.guiRadio {
+   width: 31%;
+   text-align: center;
+}
+
+#guiTypeSelection {
+   display: flex;
+   justify-content: space-between;
+}
+
+#preset {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.presetEntry {
+   width: 27%;
+   text-align: center;
+}
+
+.guiSection {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 2%;
+}
+.sectionColumn {
+   vertical-align: top;
+}
+
+#randColor {
+   display: flex;
+   justify-content: space-around;
+}
+
+.inputNum {
+   width: 6em;
+}
+
+.guiRadioLabel {
+   font-size: 150%;
+   font-weight: bold;
+}
+
+.sectionHeader {
+   font-size: 160%;
+   text-align: center;
+   width: 100%;
+}
+
+
+
+/*Anything below this line is temporary styling******************************/
+.guiSection {
+   box-sizing: border-box;
+}
+
+.sectionColumn {
+   background-color: var(--bright);
+}
+
+.presetEntry {
+   background-color: var(--bright);
+   margin: 3px;
+}
+
+.presetEntry, .sectionColumn, #reduce {
+   padding: 1.4%;
+   border-radius: 1vw;
+   color: var(--offWhite);
+}
+#svgContainer {
+   border: .5vw;
+   border-color: var(--color4);
+   border-style: solid;
+   border-radius: .5vw;
+}
+
+#bottomSelections {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 2%;
+   padding: 2%;
+}
+#topSelection, #bottomSelections {
+   border: 1vw solid var(--dark);
+   border-radius: .6vw;
+}
+#bottomSelections > .sectionColumn {
+   min-height: 15vh;
+   margin: 2%;
+}
+
+#reduceButtons {
+   text-align: center;
+}
