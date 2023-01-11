@@ -115,6 +115,10 @@
    #ticTacToeSvg {
       width: 30% !important;
    }
+   #svgContainer {
+      width: 70% !important;
+      margin-left: 15% !important;
+   }
 }
 
 /*Screens between 900 and 1094 px*/
@@ -142,7 +146,11 @@
    #gameContainer {
       padding-bottom: 92% !important;
    }
-   
+   /*R-Tree fixes*/
+   #topSelection {
+      font-size: 80%;
+   }
+
 }
 @media only screen and (min-width: 550px) and (max-width: 750px) {
    /*fontawesome Icon Fixes*/
@@ -181,8 +189,12 @@
       margin-left: 10% !important;
       padding-bottom: 110% !important;
    }
+    /*R-Tree fixes*/
+    #topSelection {
+      font-size: 85%;
+   }
 }
-@media only screen and (min-width: 320px) and (max-width: 550px) {
+@media only screen and (min-width: 318px) and (max-width: 550px) {
    /*fontawesome Icon Fixes*/
    .headerIcon {
       font-size: 24vw;
@@ -251,8 +263,30 @@
       padding-bottom: 130% !important;
       font-size: 90%  !important;
    }
+   /*R-Tree fixes*/
+   #genShapes {
+      width: 5.8em;
+   }
+   #topSelection .sectionColumn {
+      font-size: 70% !important;
+   }
+   #random {
+      flex-wrap: wrap;
+   }
+
+   #randLeafShapeType {
+      margin-top: 1.3vh;
+   }
+
+   .sectionColumn {
+      padding: 1% !important;
+      margin: 2vw !important;
+   }
+   .presetEntry {
+      font-size: 90%;
+   }
 }
-@media only screen and (min-width: 0px) and (max-width: 320px) {
+@media only screen and (min-width: 0px) and (max-width: 318px) {
    /*fontawesome Icon Fixes*/
    .headerIcon {
       font-size: 24vw;
@@ -313,6 +347,9 @@
       margin-left: 8% !important;
       padding-bottom: 125% !important;
       font-size: 90% !important;
+   }
+   #regionGuiContainer {
+      font-size: 60%;
    }
 }
 body > * {
@@ -827,11 +864,11 @@ nav a:hover::before {
    font-weight: bold;
    font-size: larger;
 }
-#bio a { 
+.bio a { 
    text-decoration: none;
    color: var(--bright);
 }
-#bio p {
+.bio p {
    margin-left: 6%;
    font-size: 120%;
 }
