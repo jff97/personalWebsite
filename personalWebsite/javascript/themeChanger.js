@@ -133,12 +133,11 @@ function initializeThemes() {
    //color2 = "#26D9B6";
    //color3 = "#B626D9";
    //color4 = "#FFFFFF";
-
-   //new maryam inspiree color scheme
-   color1 = "#168816"
-   color2 = "#c8d755"
-   color3 = "#8b4513"
-   color4 = "#000000"
+   
+   color1 = "#3e497e"
+   color2 = "#dfb490"
+   color3 = "#ead6c8"
+   color4 = "#8d9dce"
 
    //instantiate the default2 theme object
    defaultTheme2 = new Theme(color1, color2, color3, color4);
