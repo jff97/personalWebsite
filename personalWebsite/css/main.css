@@ -864,11 +864,11 @@ nav a:hover::before {
    font-weight: bold;
    font-size: larger;
 }
-#bio a { 
+.bio a { 
    text-decoration: none;
    color: var(--bright);
 }
-#bio p {
+.bio p {
    margin-left: 6%;
    font-size: 120%;
 }

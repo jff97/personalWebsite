@@ -51,6 +51,36 @@
       <div class="leftOfMain"><br></div>
       <div class="centerColumn">
          <div id="regionGuiContainer">
+            <div class="bio">
+               <div class="sectionHeader">
+                  Description
+               </div>
+               <p>
+                  An R-Tree is a data structure usefull in spacial access methods specifically spacial hit querries. This implementation of an R-Tree is focused on 2 things. 
+                  <br><strong>Firstly</strong> to provide a tool for understanding what an R-Tree looks like in order to get a better understanding of the data structure. 
+                  <strong>Secondly</strong> this implementation adds a fun twist where the shape of any leaf region as well as any combined region can be a circle or rectangle. 
+               </p>
+               <p>
+                  Reducing an R-Tree is the process of taking a list of regions (shapes) and repeatedly combining the closest 2 regions into one parent region until there is only 1 region left. That region is now the root of the R-Tree.
+               </p>
+               <br>
+               <div class="sectionHeader">
+                  General Directions
+               </div>
+               <p>
+                  This visualizer is used by 
+                  <br><strong>First</strong> generating shapes in the <i>Leaf Generation Options.</i>
+                  <strong>Second</strong> choosing your <i>Combination Shape Types.</i>
+                  <strong>Third</strong> hitting the <strong>Reduce Shapes</strong> button.
+                  <strong>Fourth Optional</strong> using step foreward/step back buttons to watch the reduction process that makes the tree.
+               </p>
+               <p>
+                  <strong>Helpful Tips</strong> 
+                  <br>1. The width and height of the shape canvas is 100 units when filled randomly but you can manually add a shape anywhere
+                  <br>2. The reduce algorithm takes exponential time with more shapes so if you have more then 1500 shapes expect to wait a long time. 
+                  <br>3. In the Manual and Random Gui the colors of Rectangles and Circles can be chosen separately.
+               </p>
+            </div>
             <div id="topSelection">
                <div class="sectionHeader">
                   <br>
@@ -58,24 +88,33 @@
                   <br><br>
                </div>
                <div id="guiTypeSelection">
-                  <div id="presetRadio" class="guiRadio">
-                     <div class="guiRadioLabel">
-                        Preset
-                     </div>
-                     <input type="radio" name="guiSelection" onclick="gui.selectGuiType('preset')" checked="checked">
+                  <div class="sectionHeader">
+                     Gui Selection
                   </div>
-                  <div id="manualRadio" class="guiRadio">
-                     <div class="guiRadioLabel">
-                        Manual
-                     </div>
-                     <input type="radio" name="guiSelection" onclick="gui.selectGuiType('manual')">
-                  </div>
-                  <div id="randomRadio" class="guiRadio">
-                     <div class="guiRadioLabel">
-                        Random
-                     </div>
-                     <input type="radio" name="guiSelection" onclick="gui.selectGuiType('random')">
-                  </div>
+                  <ul id="radioList">
+                     <li>
+                        <div class="guiRadio">
+                           <div class="guiRadioLabel">
+                              <input type="radio" name="guiSelection" onclick="gui.selectGuiType('preset')" checked="checked">
+                              Preset
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="guiRadio">
+                           <div class="guiRadioLabel">
+                              <input type="radio" name="guiSelection" onclick="gui.selectGuiType('manual')"> Manual
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="guiRadio">
+                           <div class="guiRadioLabel">
+                              <input type="radio" name="guiSelection" onclick="gui.selectGuiType('random')"> Random
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
                </div>
                <div id="sectionContainer">
                   <div id="preset" class="guiSection">
@@ -128,8 +167,8 @@
                         </div>
                         <div class="manualButtons">
                            <button onclick="gui.addManualRect()">Add Rectangle</button>
-                           <Br>
-                           <button onclick="RegionGui.fillManRect()">Fill Random</button> 
+                           <br>
+                           <button onclick="RegionGui.fillManRect()">Fill Random<br>Values</button> 
                         </div>
                      </div>
                      <div class="rectCirInputs sectionColumn">
@@ -151,14 +190,14 @@
                         <div class="manualButtons">
                            <button onclick="gui.addManualCircle()">Add Circle</button>
                            <br>
-                           <button onclick="RegionGui.fillManCircle()">Fill Random</button>
+                           <button onclick="RegionGui.fillManCircle()">Fill Random<br>Values</button>
                         </div>
                      </div>
          
                      <div class="sectionColumn">
                         <div class="sectionHeader">Color</div>
                         <input id="manualColor" type="color" value="#bf40bf"><br><br>
-                        <button onclick="RegionGui.fillManColor()">Fill<br>Rand<br>Color</button>
+                        <button onclick="RegionGui.fillManColor()">Fill<br>Random<br>Color</button>
                      </div>
                   </div>
          
@@ -192,6 +231,7 @@
                         <div id="randColor">
                            <div class="guiRadio">
                               <input type="radio" name="randRectColor" value="notRandom">
+                              <br>
                               <input type="color" value="#bf40bf" id="rectSelectColor">
                            </div>
                            <div class="guiRadio">
@@ -213,6 +253,7 @@
                         <div id="randColor">
                            <div class="guiRadio">
                               <input type="radio" name="randCircleColor" value="notRandom">
+                              <br>
                               <input type="color" value="#bf40bf" id="circleSelectColor">
                            </div>
                            <div class="guiRadio">
@@ -225,9 +266,13 @@
                      <div id="randLeafShapeType" class="sectionColumn">
                         <div class="sectionHeader">Leaf Shape Types</div>
                         <div id="shapeSelection">
-                           <input type="radio" name="leafShapeTypes" value="circle"> All Circles<br>
-                           <input type="radio" name="leafShapeTypes" value="rect"> All Rectangles<br>
-                           <input type="radio" name="leafShapeTypes" value="random" checked="checked"> Random Mix<br>
+                           <input type="radio" name="leafShapeTypes" value="circle">
+                           <label>All Circles</label><br>
+                           <input type="radio" name="leafShapeTypes" value="rect">
+                           <label>All Rectangles</label><br>
+                           <input type="radio" name="leafShapeTypes" value="random" checked="checked">
+                           <label>Random Mix</label> 
+                           <br><br>
                            How Many<br>
                            <input type="text" class="inputNum" id="randomLeafNum" value="15">
                         </div>
@@ -256,7 +301,7 @@
                <button onclick="gui.stateEnd()">End</button>
                <br>
                <button onclick="gui.stateForward()">Step Forward</button>
-               <button onclick="gui.stateBack()">StepBack</button>
+               <button onclick="gui.stateBack()">Step Back</button>
                </div>
             </div>
          </div>
