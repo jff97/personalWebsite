@@ -102,6 +102,9 @@
    .footerIcon {
       font-size: 5.2vw !important;
    }
+   .headerIcon {
+      font-size: 12vw !important;
+   }
    /*Travel fixes*/
    #us-map{
       left: 20% !important;
