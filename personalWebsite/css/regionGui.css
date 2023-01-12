@@ -145,4 +145,16 @@
 
 #reduceButtons {
    text-align: center;
+   box-sizing: border-box;
+}
+
+#regionGuiContainer button {
+   transition-duration: .1s;
+}
+#regionGuiContainer button:active {
+   background-color: var(--offWhite)
+}
+
+#regionGuiContainer button:hover {
+   filter: brightness(90%);
 }
