@@ -102,6 +102,9 @@
    .footerIcon {
       font-size: 5.2vw !important;
    }
+   .headerIcon {
+      font-size: 12vw !important;
+   }
    /*Travel fixes*/
    #us-map{
       left: 20% !important;
@@ -155,7 +158,7 @@
 @media only screen and (min-width: 550px) and (max-width: 750px) {
    /*fontawesome Icon Fixes*/
    .headerIcon {
-      font-size: 24vw;
+      font-size: 24vw !important;
    }
    /*Universal Fixes*/
    .leftOfMain, .rightOfMain {
@@ -197,7 +200,7 @@
 @media only screen and (min-width: 318px) and (max-width: 550px) {
    /*fontawesome Icon Fixes*/
    .headerIcon {
-      font-size: 24vw;
+      font-size: 22vw !important;
    }
    .radioContainer input {
       margin-top: 1em;
@@ -289,7 +292,7 @@
 @media only screen and (min-width: 0px) and (max-width: 318px) {
    /*fontawesome Icon Fixes*/
    .headerIcon {
-      font-size: 24vw;
+      font-size: 20vw;
    }
    .radioContainer input {
       margin-top: .9em;
@@ -358,7 +361,7 @@ body > * {
 body {
    position: relative;
    background-color: var(--dark);
-   margin: 0;
+   margin: 1px;
    font-family: Arial, Helvetica, sans-serif;
 }
 .container {
@@ -378,6 +381,7 @@ header::after {
 .myLogo {
    height: 55px;
    float: left;
+   margin-top: 3px;
 }
 nav {
    float: right;
@@ -423,9 +427,9 @@ nav a:hover::before {
    text-align: center;
    color: var(--offWhite);
 }
-#animaitonContainer {
-   position: relative;
-   height: 10vw;
+#animationContainer {
+   position: absolute;
+   bottom: 42%;
    width: 100%;
 }
 
@@ -947,6 +951,18 @@ nav a:hover::before {
 .centered {
    text-align: center;
 }
+.topBanner {
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+}
+#bannerFix {
+   position: relative;
+   height: 52vw;
+   margin-top: 0%;
+   font-size: 130%;
+}
 
-
-
+#bannerNav {
+   margin-bottom: 0%;
+}
