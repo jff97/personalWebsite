@@ -247,6 +247,10 @@
    }
    /*Gaming fixes*/
    /*Academic Fixes*/
+   #academicTable {
+      font-size: 92%;
+      padding: .8%;
+   }
    /*professional fixes*/
    .resume {
       display: none;
@@ -966,3 +970,83 @@ nav a:hover::before {
 #bannerNav {
    margin-bottom: 0%;
 }
+
+.projInfo {
+   width: 64%;
+   border-right: 4px solid var(--offWhite);
+   margin-right: 2%;
+}
+
+.projImg {
+   width: 34%;
+}
+.projImg > img {
+   width: 100%;
+}
+
+#projContainer {
+   display: flex;
+   flex-wrap: wrap;
+   width: 85%;
+   margin-left: 7.5%;
+   padding: 3%;
+   background-color: var(--bright);
+   border-radius: 2.7vh;
+   color: var(--offWhite);
+   margin-bottom: 5vh;
+}
+.topInfo {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 4px solid var(--offWhite);
+}
+.projTitle, .projView {
+   padding: 3%;
+}
+.projTitle {
+   font-size: 200%;
+}
+.projView {
+   text-decoration: inherit;
+   color: inherit;
+   background-color: var(--brightContrast);
+   height: fit-content;
+   border-radius: 1vh;
+   padding: 1.2vh;
+   margin-right: 1vw;
+   color: var(--dark);
+}
+.projView:hover {
+   filter: brightness(90%);
+}
+
+.projDesc {
+   padding: 3%;
+}
+.projSourceCode {
+   display: block;
+   margin-top: 1em;
+   font-size: 130%;
+   width: fit-content;
+   padding: .4em;
+}
+.projLink {
+   color: var(--offWhite);
+}
+.projLink:hover {
+   filter: brightness(85%);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 680px) {
+   .projImg {
+      width: 100%;
+   }
+   .projInfo {
+      width: 100%;
+      border-right: none;
+      margin-bottom: 2.5vh;
+      border-bottom: 4px solid var(--offWhite);
+   }
+}
+
+
