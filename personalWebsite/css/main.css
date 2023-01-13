@@ -966,3 +966,22 @@ nav a:hover::before {
 #bannerNav {
    margin-bottom: 0%;
 }
+
+.projInfo {
+   background-color: red;
+   width: 65%;
+   height: 20vw;
+}
+
+.projImg {
+   background-color: blue;
+   width: 35%;
+   height: 20vw;
+}
+
+#projContainer {
+   display: flex;
+   flex-wrap: wrap;
+   width: 80%;
+   margin-left: 10%;
+}
