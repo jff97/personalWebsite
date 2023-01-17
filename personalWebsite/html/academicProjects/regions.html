@@ -56,29 +56,30 @@
                   Description
                </div>
                <p>
-                  An R-Tree is a data structure useful in spatial access methods specifically spatial hit queries. This implementation of an R-Tree is focused on 2 things. 
+                  An R-Tree is a data structure useful in spatial access methods. This implementation of an R-Tree is focused on 2 things. 
                   <br><strong>Firstly</strong> to provide a tool used to see what an R-Tree looks like in order to get a better understanding of the data structure. 
                   <strong>Secondly</strong> this implementation adds a fun twist where the shape of any leaf region as well as any combined region can be a circle or rectangle. 
                </p>
                <p>
-                  Reducing an R-Tree is the process of taking a list of regions (shapes) and repeatedly combining the closest 2 regions into one parent region until there is only 1 region left. That region is now the root of the R-Tree.
+                  <strong>Reducing </strong>an R-Tree is the process of taking a list of regions (shapes) and repeatedly combining the closest 2 regions into one parent region until there is only 1 region left. That region is now the root of the R-Tree.
                </p>
                <br>
                <div class="sectionHeader">
                   General Directions
                </div>
                <p>
-                  This visualizer is used by 
-                  <br><strong>First:</strong> generating shapes in the <i>Leaf Generation Options.</i>
-                  <strong>Second:</strong> choosing your <i>Combination Shape Types.</i>
-                  <strong>Third:</strong> hitting the <strong>Reduce Shapes</strong> button.
-                  <strong>Fourth (Optional):</strong> using step foreward/step back buttons to watch the reduction process that makes the tree.
+                  This visualizer is used by <br>
+                  <strong>First:</strong> Choose between the Preset, Build Your Own, or Random GUI modes.<br>
+                  <strong>Second:</strong> Generate shapes in the <i>Leaf Generation Options.</i><br>
+                  <strong>Third:</strong> Choose your <i>Combination Shape Types.</i><br>
+                  <strong>Fourth:</strong> Hit the <strong>Reduce Shapes</strong> button.<br>
+                  <strong>Fifth (Optional):</strong> using step foreward/step back buttons to watch the reduction process that makes the tree.<br>
                </p>
                <p>
                   <strong>Helpful Tips</strong> 
-                  <br>1. The width and height of the shape canvas is 100 units when filled randomly but you can manually add a shape anywhere
-                  <br>2. The reduce algorithm takes exponential time with more shapes so if you have more then 1500 shapes expect to wait a long time. 
-                  <br>3. In the Manual and Random Gui the colors of Rectangles and Circles can be chosen separately.
+                  <br>1. The width and height of the shape canvas is 100 units when filled randomly but you can manually add a shape anywhere under the Build Your Own GUI.
+                  <br>2. <strong>WARNING </strong> the reduce algorithm takes exponential time with more shapes so if you have more then 1500 shapes expect to wait a long time. 
+                  <br>3. In the Build Your Own and Random Gui the colors of Rectangles and Circles can be chosen separately.
                </p>
             </div>
             <div id="topSelection">
@@ -89,7 +90,7 @@
                </div>
                <div id="guiTypeSelection">
                   <div class="sectionHeader">
-                     Gui Selection
+                     GUI Mode
                   </div>
                   <ul id="radioList">
                      <li>
@@ -103,7 +104,7 @@
                      <li>
                         <div class="guiRadio">
                            <div class="guiRadioLabel">
-                              <input type="radio" name="guiSelection" onclick="gui.selectGuiType('manual')"> Manual
+                              <input type="radio" name="guiSelection" onclick="gui.selectGuiType('manual')"> Build Your Own
                            </div>
                         </div>
                      </li>
@@ -119,31 +120,30 @@
                <div id="sectionContainer">
                   <div id="preset" class="guiSection">
                      <div class="presetEntry">
-                        <button onclick="gui.test1()">Test 1</button>
+                        <button onclick="gui.test1()">Generate <br>Preset 1</button>
                         <div>Random Leaf shapes are made circles or rectangles randomly</div>
                      </div>
                      <div class="presetEntry">
-                        <button onclick="gui.test2()">Test 2</button>
+                        <button onclick="gui.test2()">Generate <br>Preset 2</button>
                         <div>Random Leaf shapes are all rectangles</div>
                      </div>
                      <div class="presetEntry">
-                        <button onclick="gui.test3()">Test 3</button>
+                        <button onclick="gui.test3()">Generate <br>Preset 3</button>
                         <div>Random Leaf shapes are all circles</div>
                      </div>
                      <div class="presetEntry">
-                        <button onclick="gui.test4()">Test 4</button>
+                        <button onclick="gui.test4()">Generate <br>Preset 4</button>
                         <div>4 leaf circles picked manually. 2 circles are intersecting</div>
                      </div>
                      <div class="presetEntry">
-                        <button onclick="gui.test5()">Test 5</button>
-                        <div>Test 4 with one circle swapped for a rectangle. No Intersecting</div>
+                        <button onclick="gui.test5()">Generate <br>Preset 5</button>
+                        <div>Preset 4 with one circle swapped for a rectangle. No Intersecting</div>
                      </div>
                      <div class="presetEntry">
-                        <button onclick="gui.test6()">Test 6</button>
-                        <div>Add a large rectangle far away from test 5</div>
+                        <button onclick="gui.test6()">Generate <br>Preset 6</button>
+                        <div>Add a large rectangle far away from preset 5</div>
                      </div>
                   </div>
-         
                   <div id="manual" class="guiSection">
                      <div class="rectCirInputs sectionColumn">
                         <div class="sectionHeader">Rectangle</div>
@@ -285,7 +285,7 @@
             <div id="bottomSelections">
                <div class="sectionHeader">Reduce Options<br><br></div>
                <div id="randCombineShapeType" class="sectionColumn">
-                  Combination Shape Types
+                  Combined Region Types
                   <div id="shapeSelection">
                      <input type="radio" name="combineShapeType" value="circle"> All Circles<br>
                      <input type="radio" name="combineShapeType" value="rect"> All Rectangles<br>
