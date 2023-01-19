@@ -6,6 +6,66 @@
    --bright:#0065A8;
    --offWhite:#EFEFEF;
 }
+
+/*Nav Bar Styles here*/
+nav {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   height: 15vh;
+   background-color: var(--bright);
+}
+nav a {
+   box-sizing: border-box !important;
+   height: 100%;
+   width: 20%;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--offWhite);
+   font-weight: bold;
+   border-bottom: .7vh solid var(--brightContrast);
+   border-left: .7vh solid transparent;
+   border-right: .7vh solid transparent;
+   border-top: .7vh solid transparent;
+}
+nav a:hover {
+   border-bottom: .7vh solid transparent;
+   border-left: .7vh solid var(--brightContrast);
+   border-right: .7vh solid var(--brightContrast);
+   border-top: .7vh solid var(--brightContrast);
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
+}
+nav #menu {
+   display: flex;
+   flex-wrap: wrap;
+   width: 70%;
+}
+nav #myLogoContainer {
+   width: 30%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   border-bottom: .7vh solid var(--brightContrast);
+   padding: 1vw;
+}
+.navIcon {
+   font-size: 230%;
+   margin-right: 5%;
+   color: var(--dark);
+}
+.myLogo {
+   height: 90%;
+}
+.navAnchorCenter {
+   display: flex;
+   align-items: center;
+   height: fit-content;
+}
 /*styles for the theme changer*/
 #themeContainer {
    /*Optional Styling below*/
@@ -76,12 +136,6 @@
    font-size: 15vw;
    color: var(--brightContrast);
 }
-.navIcon {
-   margin-right: 5px;
-   vertical-align: middle;
-   font-size: 230%;
-   color: var(--dark);
-}
 .footerIcon {
    vertical-align: middle;
    font-size: 7.1vw;
@@ -98,6 +152,9 @@
 /*Breakpoints*/
 /*When the screen is above 1094 px*/
 @media only screen and (min-width: 1094px) {
+   nav {
+      font-size: 100%;
+   }
    /*Universal Fixes*/
    .footerIcon {
       font-size: 5.2vw !important;
@@ -126,6 +183,16 @@
 
 /*Screens between 900 and 1094 px*/
 @media only screen and (min-width: 750px) and (max-width: 1094px) {
+   nav #menu {
+      width: 86%;
+      font-size: 95%;
+   }
+   nav #myLogoContainer {
+      width: 14%;
+   }
+   .myLogo {
+      height: 70%;
+   }
    /*Universal Fixes*/
    
    .tableStyle1 td, .tableStyle1 th {
@@ -156,6 +223,16 @@
 
 }
 @media only screen and (min-width: 550px) and (max-width: 750px) {
+   nav {
+      font-size: 65%;
+   }
+   nav #menu {
+      width: 83%;
+   }
+   nav #myLogoContainer {
+      width: 17%;
+      justify-content: center;
+   }
    /*fontawesome Icon Fixes*/
    .headerIcon {
       font-size: 24vw !important;
@@ -198,6 +275,32 @@
    }
 }
 @media only screen and (min-width: 318px) and (max-width: 550px) {
+   nav {
+      font-size: 100%;
+      height: 50vh;
+      border-bottom: .7vh solid var(--brightContrast);
+   }
+   nav a {
+      width: 100%;
+      height: 20%;
+      border: none;
+      justify-content: start;
+   }
+   nav a:hover {
+      border: none;
+   }
+   nav #menu {
+      width: 50%
+   }
+   nav #myLogoContainer {
+      width: 50%;
+      justify-content: center;
+      border: none;
+   }
+   .myLogo {
+     height: auto;
+     width: 85%;
+   }
    /*fontawesome Icon Fixes*/
    .headerIcon {
       font-size: 22vw !important;
@@ -294,6 +397,32 @@
    }
 }
 @media only screen and (min-width: 0px) and (max-width: 318px) {
+   nav {
+      font-size: 80%;
+      height: 50vh;
+      border-bottom: .7vh solid var(--brightContrast);
+   }
+   nav a {
+      width: 100%;
+      height: 20%;
+      border: none;
+      justify-content: start;
+   }
+   nav a:hover {
+      border: none;
+   }
+   nav #menu {
+      width: 50%
+   }
+   nav #myLogoContainer {
+      width: 50%;
+      justify-content: center;
+      border: none;
+   }
+   .myLogo {
+     height: auto;
+     width: 70%;
+   }
    /*fontawesome Icon Fixes*/
    .headerIcon {
       font-size: 20vw;
@@ -367,63 +496,6 @@ body {
    background-color: var(--dark);
    margin: 1px;
    font-family: Arial, Helvetica, sans-serif;
-}
-.container {
-   width: 90%;
-   margin: 0 auto;
-}
-.navHeader {
-   background-color: var(--bright);
-   width: 100%;
-}
-
-header::after {
-   content: '';
-   display: table;
-   clear: both;
-}
-.myLogo {
-   height: 55px;
-   float: left;
-   margin-top: 3px;
-}
-nav {
-   float: right;
-}
-nav ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-nav li {
-   display: inline-block;
-   margin-left: 45px;
-   padding-top: 17px;
-   padding-bottom: 17px;
-   position: sticky;
-}
-nav a {
-   color: var(--offWhite);
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size: 14px;
-   white-space: nowrap;
-}
-nav a:hover {
-   color: lightgray;
-}
-nav a::before {
-   content: '';
-   display: block;
-   height: 8px;
-   width: 0%;
-   position: absolute;
-   background-color: var(--brightContrast);
-   top: 0;
-   transition: all ease-in-out 100ms;
-}
-nav a:hover::before {
-   width: 100%;
 }
 .topHeader {
    font-family:'Courier New', Courier, monospace;
@@ -965,10 +1037,6 @@ nav a:hover::before {
    height: 52vw;
    margin-top: 0%;
    font-size: 130%;
-}
-
-#bannerNav {
-   margin-bottom: 0%;
 }
 
 .projInfo {
