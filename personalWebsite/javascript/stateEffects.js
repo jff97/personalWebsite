@@ -55,7 +55,7 @@ $("path, circle").click(
   function checkVisitedList(e) {
     for (var i = 0; i < visitedList.length; i++) {
       if (e.currentTarget.id === visitedList[i]) {
-        window.location.replace('state/' + e.currentTarget.id + '.html');
+        window.location.href = 'state/' + e.currentTarget.id + '.html'
       }
     }
   }
