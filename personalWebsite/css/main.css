@@ -497,63 +497,6 @@ body {
    margin: 1px;
    font-family: Arial, Helvetica, sans-serif;
 }
-/* .container {
-   width: 90%;
-   margin: 0 auto;
-} */
-/* .navHeader {
-   background-color: var(--bright);
-   width: 100%;
-}
-
-header::after {
-   content: '';
-   display: table;
-   clear: both;
-} */
-/* .myLogo {
-   height: 55px;
-   float: left;
-   margin-top: 3px;
-} */
-/* nav {
-   float: right;
-}
-nav ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
-nav li {
-   display: inline-block;
-   margin-left: 45px;
-   padding-top: 17px;
-   padding-bottom: 17px;
-   position: sticky;
-}
-nav a {
-   color: var(--offWhite);
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size: 14px;
-   white-space: nowrap;
-}
-nav a:hover {
-   color: lightgray;
-}
-nav a::before {
-   content: '';
-   display: block;
-   height: 8px;
-   width: 0%;
-   position: absolute;
-   background-color: var(--brightContrast);
-   top: 0;
-   transition: all ease-in-out 100ms;
-}
-nav a:hover::before {
-   width: 100%;
-} */
 .topHeader {
    font-family:'Courier New', Courier, monospace;
    font-size: 350%;
@@ -1095,10 +1038,6 @@ nav a:hover::before {
    margin-top: 0%;
    font-size: 130%;
 }
-
-/* #bannerNav {
-   margin-bottom: 0%;
-} */
 
 .projInfo {
    width: 64%;
