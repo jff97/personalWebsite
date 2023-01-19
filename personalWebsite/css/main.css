@@ -35,6 +35,9 @@ nav a:hover {
    border-left: .7vh solid var(--brightContrast);
    border-right: .7vh solid var(--brightContrast);
    border-top: .7vh solid var(--brightContrast);
+   transition-property: border;
+   transition-duration: 250ms;
+   transition-timing-function: linear;
 }
 nav #menu {
    display: flex;
