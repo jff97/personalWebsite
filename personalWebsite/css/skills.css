@@ -1,0 +1,35 @@
+#skillsSection {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: red;
+   width: 90%;
+   margin-left: 5%;
+   height: 30vh;
+}
+
+
+#skillsSection  #info, #skillsSection  #badges {
+   width: 43%;
+   height: 80%;
+   background-color: green;
+}
+
+#skillsSection #info {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+#skillsSection #description, #skillsSection #alignBar {
+   background-color: blue;
+   width: 80%;
+}
+
+#skillsSection #skillBar {
+   width: 38%;
+   border-radius: 1vw;
+   background-color: purple;
+   height: 3vw;
+}
