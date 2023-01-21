@@ -224,14 +224,17 @@ nav #myLogoContainer {
 }
 @media only screen and (min-width: 550px) and (max-width: 750px) {
    nav {
-      font-size: 65%;
+      font-size: 58%;
    }
    nav #menu {
-      width: 83%;
+      width: 90%;
    }
    nav #myLogoContainer {
-      width: 17%;
+      width: 10%;
       justify-content: center;
+   }
+   .myLogo {
+      height: 70%;
    }
    /*fontawesome Icon Fixes*/
    .headerIcon {
