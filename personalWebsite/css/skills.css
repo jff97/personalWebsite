@@ -1,35 +1,110 @@
 #skillsSection {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    align-items: center;
-   background-color: red;
+   background-color: var(--dark);
+   border: .3em solid var(--offWhite);
+   border-radius: 2vw;
    width: 90%;
    margin-left: 5%;
-   height: 30vh;
+   height: 40vh;
+   color: var(--offWhite);
+}
+#skillsSection #midBorder {
+   width: .3em;
+   height: 100%;
+   width: .3em;
+   background-color: var(--brightContrast);
 }
 
 
 #skillsSection  #info, #skillsSection  #badges {
    width: 43%;
    height: 80%;
-   background-color: green;
 }
 
 #skillsSection #info {
    display: flex;
+   flex-direction: column;
+   justify-content: center;
    align-items: center;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
 }
 
 #skillsSection #description, #skillsSection #alignBar {
-   background-color: blue;
-   width: 80%;
+   width: 87%;
 }
 
 #skillsSection #skillBar {
-   width: 38%;
-   border-radius: 1vw;
-   background-color: purple;
-   height: 3vw;
+   box-sizing: border-box;
+   width: 78%;
+   border-radius: .35em;
+   height: 85%;
+   border: 2.3px solid black;
+}
+
+#skillsSection #description {
+   text-align: center;
+   display: flex;
+   align-items: flex-end;
+   height: 50%;
+   border-bottom: .3em solid var(--brightContrast)
+}
+#skillsSection #alignBar {
+   display: flex;
+   z-index: -1;
+   align-items: center;
+   margin-top: 4%;
+   height: 12%;
+}
+
+#skillsSection #innerBarFill {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: orange;
+   width: 0%;
+   height: 100%;
+   border-radius: .25em;
+   text-align: center;
+}
+
+#skillsSection #skillNum {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   font-size: 100%;
+   margin-left: 3px;
+   font-weight: bold;
+}
+
+#skillsSection #badges {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   width: calc(50% - .3em);
+}
+
+#skillsSection .aBadge {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   width: 50%;
+   height: 2em;
+  
+}
+.aBadge img {
+   z-index: 3;
+}
+
+.whiteCircle {
+   position: absolute;
+   background-color: white;
+   width: 4vw;
+   width: 70%;
+   height: 0;
+   padding-bottom: 70%;
+   border-radius: 50%;
+   top: 0;
 }
