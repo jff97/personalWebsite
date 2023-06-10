@@ -12,7 +12,6 @@ function loadHighQualityImages() {
          imageList.push(images[j]);
        }
      }
-     alert("Loading new")
      // Start dual loading
      for (var i = 0; i < imageList.length; i++) {
        var image = imageList[i];
