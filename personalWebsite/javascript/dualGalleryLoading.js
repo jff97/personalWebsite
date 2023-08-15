@@ -1,10 +1,9 @@
 function loadHighQualityImages() {
-  // Delay the image loading for 4 seconds
+  // Delay for 10 milliseconds
   setTimeout(function () {
     // Get all the images
     var picFlowDivs = document.getElementsByClassName('picFlow');
     var imageList = [];
-
     for (var i = 0; i < picFlowDivs.length; i++) {
       var images = picFlowDivs[i].getElementsByTagName('img');
 
@@ -12,7 +11,8 @@ function loadHighQualityImages() {
         imageList.push(images[j]);
       }
     }
-    // Start dual loading
+
+    // replace each image with high quality version
     for (var i = 0; i < imageList.length; i++) {
       var image = imageList[i];
       var lowQSrc = image.src;
@@ -26,10 +26,9 @@ function loadHighQualityImages() {
       })(image, highQSrc);
 
       highQImg.src = highQSrc;
-      image.parentNode.appendChild(highQImg);
+      image.parentNode.replaceChild(highQImg, image);
     }
-  }, 100); // Delay for 1/10 of a second
+  }, 10);
 }
 
 window.addEventListener('load', loadHighQualityImages);
- 
