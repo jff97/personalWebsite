@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Roadtrip photos from TODO">
+   <meta name="keywords" content="pictures, TODO, Computer Science, Personal Website, John Fox, Portfolio, Internship, Job">
+   <meta name="author" content="John Isaac Fox">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Virginia vacation pictures | Fox</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script src="https://kit.fontawesome.com/70c0cbb9aa.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="../../css/main.css">
+   <link rel="icon" type="image/x-icon" href="../../assets/logos/pinwheel.ico">
+</head>
+<body>
+   <nav>
+      <div id="myLogoContainer">
+         <img class="myLogo" src="../../assets/logos/johnFoxLogo.png" alt="Blue and orange pinwheel and corndog with mustard">
+      </div>
+      <div id="menu">
+         <a href="../../../index.html">
+            <div class="navAnchorCenter">
+               <i class="fa-solid fa-house navIcon"></i>
+               Home
+            </div>
+         </a>
+         <a href="../games.html">
+            <div class="navAnchorCenter">
+               <i class="fa-solid fa-gamepad navIcon"></i>
+               Gaming
+            </div>
+         </a>
+         <a href="../academic.html">
+            <div class="navAnchorCenter">
+               <i class="fa-solid fa-graduation-cap navIcon"></i>
+               Academic
+            </div>
+         </a>
+         <a href="../professional.html">
+            <div class="navAnchorCenter">
+               <i class="fa-solid fa-user-tie navIcon"></i>
+               Professional
+            </div>
+         </a>
+         <a href="../travel.html">
+            <div class="navAnchorCenter">
+               <i class="fa-solid fa-car-side navIcon"></i>
+               Travel
+            </div>
+         </a>
+      </div>
+   </nav>
+   <div class="header">
+      <h1 class="topHeader">
+         <i class="fa-solid fa-car-side headerIcon"></i> Virginia
+      </h1>
+   </div>
+   <div class="flexContainer">
+      <div class="leftOfMain"><br></div>
+      <div class="centerColumn">
+         <h1>
+            <i class="fa-solid fa-calendar-days travelInfoIcon"></i><br> 
+            Visited August 4th to August 6th 2023
+         </h1>
+         <h2>
+            <i class="fa-solid fa-location-dot travelInfoIcon"></i><br>
+            Places Visited
+         </h2>
+         <div class="centered">
+            <ul class="galleryList">
+               <li>Front Royal</li>
+               <li>Kristina's Wedding</li>
+               <li>Manassas</li>
+            </ul> 
+         </div>
+      </div>
+      <div class="rightOfMain"><br></div>
+   </div>
+   <!-- Photo Grid -->
+   <div class="picFlow">
+      <img src="../../assets/statesLowQ/virginia/20230804_140722.jpg" alt="virginia travel picture">
+      <img src="../../assets/statesLowQ/virginia/20230805_(1).jpg" alt="virginia travel picture">
+      <img src="../../assets/statesLowQ/virginia/20230805_200019919_iOS.jpg" alt="virginia travel picture">
+   </div>
+   <div id="themeContainer">
+      <div id="formInputs">
+         <div class="radioContainer">
+            <label for="default1">Default 1</label><br>
+            <input type="radio" id="default1" name="theme" onclick="radioClick('default1')">
+         </div>
+         <div class="radioContainer">
+            <label for="default2">Default 2</label><br>
+            <input type="radio" id="default2" name="theme" onclick="radioClick('default2')">
+         </div>
+         <div class="radioContainer">
+            <label for="customTheme">Custom</label><br>
+            <input type="radio" id="customTheme" name="theme" onclick="radioClick('customTheme')">
+         </div>
+      </div>
+      <div id="themeSpacerBar"></div>
+      <div id="colorInputContainer">
+         <div class="colorInput">
+            <label for="clrInput1">Color 1</label>
+            <input type="color" name="clrInput1" id="clrInput1" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput2">Color 2</label>
+            <input type="color" name="clrInput2" id="clrInput2" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput3">Color 3</label>
+            <input type="color" name="clrInput3" id="clrInput3" disabled onchange="applyCustomColors()">
+         </div>
+         <div class="colorInput">
+            <label for="clrInput4">Color 4</label>
+            <input type="color" name="clrInput4" id="clrInput4" disabled onchange="applyCustomColors()">
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <br>
+      <i class="fa-solid fa-scale-balanced footerIcon"></i> 
+      Licensed Under an 
+      <a class="outsidelinks" target="_blank" href="https://choosealicense.com/licenses/mit/">
+         MIT License
+      </a><br>
+      <br>
+      <b>Contact Info</b>
+      <ul>
+         <li>
+            <i class="fa-solid fa-phone footerIcon"></i>
+            (715)-523-1588
+         </li>
+         <li>
+            <i class="fa-solid fa-envelope footerIcon"></i>
+            jicfox7@gmail.com
+         </li>
+         <li>
+            <i class="fa-solid fa-location-dot footerIcon"></i>
+            La Crosse WI 54601
+         </li>
+      </ul>
+   </div>
+   <script src="../../javascript/themeChanger.js"></script>
+   <script src="../../javascript//dualGalleryLoading.js"></script>
+</body>
+</html>
