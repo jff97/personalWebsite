@@ -1,34 +1,49 @@
 function loadHighQualityImages() {
-  // Delay for 10 milliseconds
-  setTimeout(function () {
-    // Get all the images
+  // Delay before loading high-quality images
+  setTimeout(function() {
+    //alert("Before loading high-quality images");
     var picFlowDivs = document.getElementsByClassName('picFlow');
-    var imageList = [];
+    var imagePromises = [];
+
     for (var i = 0; i < picFlowDivs.length; i++) {
       var images = picFlowDivs[i].getElementsByTagName('img');
 
       for (var j = 0; j < images.length; j++) {
-        imageList.push(images[j]);
+        var image = images[j];
+        imagePromises.push(loadHighQualityImage(image));
       }
     }
 
-    // replace each image with high quality version
-    for (var i = 0; i < imageList.length; i++) {
-      var image = imageList[i];
-      var lowQSrc = image.src;
-      var highQSrc = lowQSrc.replace('/statesLowQ/', '/statesHighQ/');
-      var highQImg = new Image();
-
-      highQImg.onload = (function (img, highQSrc) {
-        return function () {
-          img.src = highQSrc;
-        };
-      })(image, highQSrc);
-
-      highQImg.src = highQSrc;
-      image.parentNode.replaceChild(highQImg, image);
-    }
+    // Wait for all high-quality images to load
+    Promise.all(imagePromises).then(function (loadedImages) {
+      // Now that all images are loaded, replace the old ones with the new ones
+      for (var i = 0; i < loadedImages.length; i++) {
+        var loadedImage = loadedImages[i];
+        loadedImage.originalImage.parentNode.replaceChild(loadedImage.highQImg, loadedImage.originalImage);
+      }
+      
+      //alert("After loading high-quality images");
+    });
   }, 10);
+}
+
+function loadHighQualityImage(image) {
+  var lowQSrc = image.src;
+  var highQSrc = lowQSrc.replace('/statesLowQ/', '/statesHighQ/');
+  var highQImg = new Image();
+
+  var promise = new Promise(function (resolve) {
+    highQImg.onload = function () {
+      resolve({
+        originalImage: image,
+        highQImg: highQImg,
+      });
+    };
+  });
+
+  highQImg.src = highQSrc;
+
+  return promise;
 }
 
 window.addEventListener('load', loadHighQualityImages);
