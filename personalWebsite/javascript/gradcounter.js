@@ -30,4 +30,4 @@ function activateCountdown(element, dateString) {
 }
 
 //this is called when the page loads
-activateCountdown(document.getElementById("gradCountdown"), "2023-12-22");
+activateCountdown(document.getElementById("gradCountdown"), "2023-12-20");
