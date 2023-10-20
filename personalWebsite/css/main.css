@@ -160,7 +160,7 @@ nav #myLogoContainer {
       font-size: 5.2vw !important;
    }
    .headerIcon {
-      font-size: 12vw !important;
+      font-size: 9vw !important;
    }
    /*Travel fixes*/
    #us-map{
@@ -194,6 +194,9 @@ nav #myLogoContainer {
       height: 70%;
    }
    /*Universal Fixes*/
+   .headerIcon {
+      font-size: 10vw !important;
+   }
    
    .tableStyle1 td, .tableStyle1 th {
       font-size: 70% !important;
