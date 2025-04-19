@@ -40,10 +40,6 @@ path:hover, circle:hover {
 }
 /*Fill this in when you add a new state
 This is the list of visited states*/
-#VA, #DE, #DC, #WI, #MN, #IL  {
+#WI, #MN , #IL, #SD, #IN, #KY, #TN, #GA, #FL, #IA, #MO, #KS, #NE, #NC, #OH, #SC, #WV, #VA, #DE, #DC {
   fill: var(--brightContrast) !important;
 }
-
-/* #SD, #IN, #KY, #TN, #GA, #FL, #IA, #MO, #KS, #NE, #NC, #OH, #SC, #WV*/
-
-
